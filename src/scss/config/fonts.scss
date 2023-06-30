@@ -1,14 +1,22 @@
 @font-face {
-	font-family: Inter;
+	font-family: Gilroy-Bold;
 	font-display: swap;
-	src: url("../fonts/Inter-Bold.woff2") format("woff2");
-	font-weight: 700;
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2");
+	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
-	font-family: Inter;
+	font-family: Gilroy-Regular;
 	font-display: swap;
-	src: url("../fonts/Inter-Regular.woff2") format("woff2");
-	font-weight: 400;
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Gilroy-Light;
+	font-display: swap;
+	src: url("../Gilroy-Light.woff2") format("woff2");
+	font-weight: 300;
 	font-style: normal;
 }

@@ -1,0 +1,20 @@
+
+
+
+[class*='__subtitle']  {
+  @include text(74px, 700, 78px);
+  color: $grayColor;
+}
+
+[class*='__subtitle_second']  {
+  @include text(30px, 500, 42px);
+  color: #6000DB;
+}
+
+.best {
+  &__subtitle{
+    max-width: 835px;
+    width: 100%;
+    padding-top: 32px;
+  }
+}

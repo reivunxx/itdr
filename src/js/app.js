@@ -13,7 +13,7 @@
 import BaseHelpers from './helpers/BaseHelpers.js';
 import PopupManager from './modules/PopupManager';
 import BurgerMenu from './modules/BurgerMenu';
-import Tabs from './modules/Tabs';
+// import Tabs from './modules/Tabs';
 import Accordion from './modules/Accordion.js';
 
 BaseHelpers.checkWebpSupport();
@@ -51,7 +51,7 @@ new BurgerMenu().init();
  * */
 // new MousePRLX();
 
-new Tabs('tabs-example', {});
+// new Tabs('tabs-example', {});
 
 new Accordion('.accordion', {
   shouldOpenAll: false, // true

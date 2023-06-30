@@ -1,0 +1,15 @@
+.button {
+  padding: 8px 20px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  @include text(32px, 500, 38px);
+  
+}
+
+.button_lilac {
+  color: $whiteColor;
+  background: $firstAccentColor;
+}
