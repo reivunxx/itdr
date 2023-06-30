@@ -11,10 +11,14 @@
 */
 [class*='__container'] {
   max-width: 1670px;
-  padding: 24px 125px;
   width: 100%;
   margin: 0 auto;
-  
+  @media all and (max-width: 1720px) {
+    padding: 24px 100px;
+  }
+  @media all and (max-width: 1420px) {
+    padding: 24px 70px;
+  }
 }
 
 // Стили отзывчивых картинок (IBG) ============================================

@@ -12,9 +12,50 @@
 }
 
 .best {
+  margin-bottom: 120px;
   &__subtitle{
     max-width: 835px;
     width: 100%;
     padding-top: 32px;
+  }
+  &__block {
+    display: flex;
+    max-width: 314px;
+    width: 100%;
+    align-items: center;
+  }
+  &__description {
+    @include text(24px, 700, 26px);
+    color: $blackColorSecond;
+    font-family: Gilroy-Bold;
+  }
+  &__img {
+    width: 64px;
+    padding-right: 10px;
+  }
+  &__text {
+    @include text(18px, 300, 28px);
+    font-family: Gilroy-Light;
+    margin-top: 18px;
+    max-width: 314px;
+    width: 100%;
+  }
+  &__wrap {
+    max-width: 378px;
+      width: 100%;
+      padding: 29px 32px;
+      border-radius: 15px;
+      background: #FFF;
+      box-shadow: 0px 6px 11px 0px rgba(33, 7, 70, 0.08);
+      @media all and (max-width: 1720px) {
+        margin: 12px
+      }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media all and (max-width: 1220px) {
+      flex-wrap: wrap;
+    }
   }
 }
