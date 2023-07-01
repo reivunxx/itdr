@@ -1,0 +1,10 @@
+
+.clients {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__subtitle{
+    margin: 32px 0 64px;
+  }
+}
