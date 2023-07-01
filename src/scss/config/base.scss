@@ -69,3 +69,8 @@
     padding-top: rem($headerHeight);
   }
 }
+
+p, h2, h3 {
+  color: $grayColor;
+  font-family: Gilroy-Regular;
+}

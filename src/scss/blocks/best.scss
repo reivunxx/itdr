@@ -3,12 +3,14 @@
 
 [class*='__subtitle']  {
   @include text(74px, 700, 78px);
+  font-family: 'Gilroy-Bold';
   color: $grayColor;
 }
 
 [class*='__subtitle_second']  {
   @include text(30px, 500, 42px);
-  color: #6000DB;
+  color: $firstAccentColor;
+  font-family: Gilroy-Regular;
 }
 
 .best {

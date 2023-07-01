@@ -1,0 +1,72 @@
+.blog {
+  &__description {
+    @include text(24px, 700, 32px);
+  font-family: 'Gilroy-Bold';
+  color: $grayColor;
+  display: -webkit-box;
+-webkit-line-clamp: 2; // количество строк
+-webkit-box-orient: vertical;
+overflow: hidden;
+  }
+  &__text {
+    @include text(14px, 300, 24px);
+    font-family: Gilroy-Light;
+  color: $grayColor;
+  display: -webkit-box;
+-webkit-line-clamp: 5; // количество строк
+-webkit-box-orient: vertical;
+overflow: hidden;
+  
+  }
+  &__wrap {
+    max-width: 378px;
+    padding: 32px 32px 29px;
+    width: 100%;
+    border-radius: 15px;
+background: #FFF;
+box-shadow: 0px 6px 11px 0px rgba(33, 7, 70, 0.08);
+    
+  }
+  &__wrap-data {
+    @include text(14px, 700, 18px);
+    font-family: Gilroy-Bold;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 0;
+  }
+  &__block-icon {
+    display: flex;
+    margin: 16px 0;
+  }
+  &__text-color_green,
+  &__text-color_blue,
+  &__text-color_orange,
+  &__text-color_pink {
+    border-radius: 4px;
+    padding: 8px;
+  }
+  &__text-color_green {
+    background: var(--unnamed, #9CEDA4);
+  }
+  &__text-color_blue {
+    background: var(--unnamed, #9CEDE8);
+  }
+  &__text-color_orange {
+background: var(--unnamed, #EDA69C);
+  }
+  &__text-color_pink {
+    background: var(--unnamed, #ED91C8);
+  }
+  &__text-color {
+    margin-right: 18px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+  &__image {
+    max-width: 314px;
+    width: 100%;
+  }
+}
