@@ -58,3 +58,4 @@ new Accordion('.accordion', {
   defaultOpen: [], // [0,1]
   collapsedClass: 'open',
 });
+

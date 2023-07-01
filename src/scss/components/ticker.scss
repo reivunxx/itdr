@@ -9,11 +9,12 @@ body, html {
 }
 .marquee span {
   display: inline-block;
-  animation: marquee 5s linear infinite;
+  animation: marquee 7s linear infinite;
+  -webkit-animation: marquee 7s linear infinite;
 }
-.marquee:hover span {
-  animation-play-state: paused;
-}
+// .marquee:hover span {
+//   animation-play-state: paused;
+// }
 @keyframes marquee {
   0% {
     transform: translate(0, 0);
@@ -33,3 +34,4 @@ body, html {
   font-family: 'Gilroy-Bold';
   }
 }
+
