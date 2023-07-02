@@ -19,6 +19,15 @@
   @media all and (max-width: 1420px) {
     padding: 24px 70px;
   }
+  @media all and (max-width: 920px) {
+    padding: 24px 30px;
+  }
+  @media all and (max-width: 620px) {
+    padding: 24px 24px;
+  }
+  @media all and (max-width: 500px) {
+    padding: 16px;
+  }
 }
 
 // Стили отзывчивых картинок (IBG) ============================================
@@ -74,3 +83,5 @@ p, h2, h3 {
   color: $grayColor;
   font-family: Gilroy-Regular;
 }
+
+

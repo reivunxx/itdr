@@ -7,14 +7,13 @@
   color: $grayColor;
 }
 
-[class*='__subtitle_second']  {
-  @include text(30px, 500, 42px);
-  color: $firstAccentColor;
-  font-family: Gilroy-Regular;
-}
+
 
 .best {
   margin-bottom: 120px;
+  @media all and (max-width: 600px) {
+    margin-bottom: 80px;
+  }
   &__subtitle{
     max-width: 835px;
     width: 100%;
@@ -30,6 +29,13 @@
     @include text(24px, 700, 26px);
     color: $blackColorSecond;
     font-family: Gilroy-Bold;
+    @media all and (max-width: 900px) {
+      @include text(18px, 700, 20px);
+    }
+    @media all and (max-width: 600px) {
+      @include text(14px, 700, 18px);
+    }
+    
   }
   &__img {
     width: 64px;
@@ -41,10 +47,19 @@
     margin-top: 18px;
     max-width: 314px;
     width: 100%;
+    @media all and (max-width: 900px) {
+      @include text(16px, 300, 26px);
+      width: 280px;
+    }
+    @media all and (max-width: 600px) {
+      @include text(14px, 300, 18px);
+      width: 250px;
+    }
   }
   &__wrap {
-    max-width: 378px;
-      width: 100%;
+    
+    // max-width: 378px;
+      // width: 100%;
       padding: 29px 32px;
       border-radius: 15px;
       background: #FFF;
@@ -52,12 +67,16 @@
       @media all and (max-width: 1720px) {
         margin: 12px
       }
+      @media all and (max-width: 900px) {
+        padding: 12px;
+      }
+      @media all and (max-width: 500px) {
+        padding: 8px;
+      }
   }
   &__wrapper {
+    overflow-x: scroll;
     display: flex;
     justify-content: space-between;
-    @media all and (max-width: 1220px) {
-      flex-wrap: wrap;
-    }
   }
 }

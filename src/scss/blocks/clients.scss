@@ -3,9 +3,23 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 190px;
+    @media all and (max-width: 427px) {
+      justify-content: center;
+      margin-bottom: 80px;
+    }
   }
   &__subtitle{
     margin: 32px 0 64px;
+  }
+  &__img {
+    @media all and (max-width: 800px) {
+      max-width: 190px;
+    width: 100%;
+    }
+    @media all and (max-width: 427px) {
+      max-width: 160px;
+    }
   }
 }

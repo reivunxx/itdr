@@ -1,0 +1,36 @@
+
+
+
+
+.slider-second {
+  z-index: -1;
+  bottom: 228px;
+  margin-top: -144px;
+  background-color: #B080ED;
+  // height: 104px;
+  position: relative;
+  width: 200%;
+  margin-left: -100px;
+  position: relative;
+  transform: rotate(13deg);
+  -webkit-transform: rotate(44deg);
+  animation-direction: reverse;
+  @media all and (max-width: 1700px) {
+    margin-left: 120px;
+  }
+  @media all and (max-width: 1400px) {
+    margin-top: -300px;
+  }
+  @media all and (max-width: 930px) {
+    margin-top: -450px;
+  }
+  @media all and (max-width: 800px) {
+    width: 250%;
+    margin-left: -80px;
+  }
+  @media all and (max-width: 500px) {
+    width: 250%;
+    margin-left: -240px;
+  }
+  
+}

@@ -1,0 +1,39 @@
+h2, [class*='__subtitle'] {
+  @include text(74px, 700, 78px);
+  @media all and (max-width: 1400px) {
+    @include text(72px, 700, 76px);
+  }
+  @media all and (max-width: 900px) {
+    @include text(52px, 700, 56px);
+    max-width: 660px;
+  }
+  @media all and (max-width: 700px) {
+    @include text(32px, 700, 38px);
+    max-width: 560px;
+  }
+  @media all and (max-width: 500px) {
+    @include text(24px, 700, 33px);
+   
+  }
+}
+
+[class*='__subtitle_second']  {
+  @include text(30px, 500, 42px);
+  color: $firstAccentColor;
+  font-family: Gilroy-Regular;
+  @media all and (max-width: 1400px) {
+    @include text(28px, 500, 40px);;
+  }
+  @media all and (max-width: 900px) {
+    @include text(24px, 500, 32px);;
+    max-width: 660px;
+  }
+  @media all and (max-width: 700px) {
+    @include text(20px, 500, 26px);;
+    max-width: 560px;
+  }
+  @media all and (max-width: 500px) {
+    @include text(16px, 500, 20px);;
+   
+  }
+}

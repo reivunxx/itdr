@@ -23,6 +23,9 @@ width: 100%;
     display: flex;
     align-items: center;
     margin-top: 24px;
+    @media all and (max-width: 600px) {
+      margin-top: 16px;
+    }
   }
   &__img{
     margin-right: 16px;
@@ -34,6 +37,21 @@ width: 100%;
   &__description {
     @include text(32px, 700, 34px);
     font-family: Gilroy-Bold;
+    @media all and (max-width: 1400px) {
+      @include text(28px, 700, 32px);;
+    }
+    @media all and (max-width: 900px) {
+      @include text(26px, 700, 30px);;
+      max-width: 660px;
+    }
+    @media all and (max-width: 700px) {
+      @include text(20px, 700, 26px);;
+      max-width: 560px;
+    }
+    @media all and (max-width: 500px) {
+      @include text(16px, 700, 20px);;
+     
+    }
   }
   &__text {
     @include text(18px, 300, 28px);
@@ -51,6 +69,16 @@ width: 100%;
     @media all and (max-width: 1240px) {
       max-width: 330px;
     }
+    @media all and (max-width: 900px) {
+      @include text(16px, 300, 26px);
+      max-width: 290px;
+    }
+    @media all and (max-width: 600px) {
+      @include text(14px, 300, 18px);
+    }
+    @media all and (max-width: 400px) {
+      max-width: 230px;
+    }
   }
   &__btn {
     background: transparent;
@@ -66,5 +94,12 @@ width: 100%;
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 120px;
+    @media all and (max-width: 700px) {
+      max-width: 206px;
+      height: 46px;
+      @include text(16px, 500, 20px);
+      margin-top: 40px;
+    margin-bottom: 80px;
+    }
   }
 }

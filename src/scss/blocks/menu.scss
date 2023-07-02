@@ -8,5 +8,12 @@
     width: 428px;
     height: 84px;
     color: $whiteColor;
+    
+  }
+  &__item:last-child {
+    display: block;
+    @media all and (max-width: 1400px) {
+      display: none;
+    }
   }
 }

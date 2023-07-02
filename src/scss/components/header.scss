@@ -4,6 +4,10 @@
 .logo {
   width: 244px;
   height: 68px;
+  @media all and (max-width: 600px) {
+    max-width: 120px;
+    width: 100%;
+  }
 }
 
 .header {
@@ -14,5 +18,33 @@
     max-width: 1060px;
     width: 100%;
     padding: 120px 0 457px;
+    @media all and (max-width: 1400px) {
+      @include text(76px, 700, 86px);
+      max-width: 860px;
+    }
+    @media all and (max-width: 900px) {
+      @include text(56px, 700, 66px);
+      max-width: 660px;
+      padding-top: 80px;
+    }
+    @media all and (max-width: 700px) {
+      @include text(36px, 700, 46px);
+      max-width: 560px;
+      padding-top: 40px;
+    }
+    @media all and (max-width: 500px) {
+      @include text(28px, 700, 32px);
+      max-width: 267px;
+     
+    }
+  }
+  &__menu {
+    margin-top: 24px;
+  }
+}
+
+.burger {
+  @media all and (max-width: 700px) {
+    width: 55px;
   }
 }
