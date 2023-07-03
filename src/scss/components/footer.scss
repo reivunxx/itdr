@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-between;
     margin: 80px 0 65px;
+    @media all and (max-width: 600px) {
+      flex-direction: column;
+      margin: 32px 0 16px;
+    }
   }
   &__item {
     display: flex;
@@ -19,10 +23,22 @@
       margin-bottom: 8px;
       color: $whiteColor;
     }
+    @media all and (max-width: 1030px) {
+      @include text(27px, 700, 30px);
+      margin-bottom: 16px;
+    }
     
+  }
+  &__item_social__img {
+    width: 40px;
   }
   &__img{
     margin-bottom: 40px;
+    @media all and (max-width: 700px) {
+      max-width: 120px; 
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
   &__item, 
   &__link,
@@ -35,6 +51,12 @@
     flex-direction: column;
     align-items: flex-start;
     color: $whiteColor;
+    &:first-child {
+      margin-bottom: 32px;
+    }
+    @media all and (max-width: 700px) {
+      width: 100%;
+    }
   }
   &__item_social {
     display: flex;
@@ -44,6 +66,9 @@
     width: 100%;
     &__img {
       cursor: pointer;
+    }
+    @media all and (max-width: 1030px) {
+      max-width: 168px;
     }
   }
   &__line {
@@ -60,6 +85,12 @@ align-self: stretch;
     &__text {
       color: $whiteColor;
       @include text(18px, 500, 30px);
+      @media all and (max-width: 700px) {
+        @include text(14px, 500, 20px);
+     }
+    }
+    @media all and (max-width: 700px) {
+       flex-direction: column;
     }
   }
 }
