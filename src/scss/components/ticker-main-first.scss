@@ -47,6 +47,7 @@ $animationSpeed: 40s;
     @media all and (max-width: 530px) {
       height: 54px;
       width: 160px;
+      top: 350px
     }
 
   }
@@ -79,4 +80,9 @@ $animationSpeed: 40s;
 
 .slider_first {
   top: 10px;
-    transform: rotate(8deg);}
+    transform: rotate(8deg); 
+    @media all and (max-width: 500px) {
+      position: relative;
+      top: -122px;
+    }
+  }

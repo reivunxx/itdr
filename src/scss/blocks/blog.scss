@@ -30,7 +30,9 @@ box-shadow: 0px 6px 11px 0px rgba(33, 7, 70, 0.08);
            display: none;
         }
       }
-    
+      @media all and (max-width: 1300px) {
+        padding: 16px;
+      }
   }
   &__wrap-data {
     @include text(14px, 700, 18px);
@@ -87,5 +89,12 @@ background: var(--unnamed, #EDA69C);
   &__image {
     max-width: 314px;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
+    @media all and (max-width: 1300px) {
+      max-width: 364px;
+      height: 246px;
+    
+    }
   }
 }

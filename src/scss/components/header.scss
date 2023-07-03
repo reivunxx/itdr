@@ -31,11 +31,12 @@
       @include text(36px, 700, 46px);
       max-width: 560px;
       padding-top: 40px;
+      padding: 60px 0 360px;
     }
     @media all and (max-width: 500px) {
       @include text(28px, 700, 32px);
       max-width: 267px;
-     
+      padding: 40px 0 243px;
     }
   }
   &__menu {

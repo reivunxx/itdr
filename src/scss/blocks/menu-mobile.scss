@@ -1,0 +1,44 @@
+.menu-mobile {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  width: 100%;
+  background: $firstAccentColor;
+  transform: translateX(-100%);
+  transition: transform .5s ease;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 120px;
+  }
+  &__button {
+    border-radius: 120px;
+    background: $whiteColor;
+    color: $firstAccentColor;
+    width: 270px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include text(24px, 500, 26px);
+    cursor: pointer;
+  }
+  &__img {
+    cursor: pointer;
+  }
+}
+
+.active {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  z-index: 10;
+}
+
+.burger {
+  cursor: pointer;
+}

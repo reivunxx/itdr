@@ -5,9 +5,17 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 190px;
-    @media all and (max-width: 427px) {
+    @media all and (max-width: 436px)  {
+      margin-bottom: 80px;
+    }
+
+    @media all and (max-width: 436px) {
       justify-content: center;
       margin-bottom: 80px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 16px;
+        grid-row-gap: 16px;
     }
   }
   &__subtitle{

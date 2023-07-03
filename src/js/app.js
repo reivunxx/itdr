@@ -59,3 +59,14 @@ new Accordion('.accordion', {
   collapsedClass: 'open',
 });
 
+const button = document.querySelector(".burger");
+let menu = document.querySelector(".menu-mobile");
+let cross = document.querySelector(".cross");
+
+button.addEventListener("click", function () {
+  menu.classList.toggle("active");
+});
+
+cross.addEventListener("click", function () {
+  menu.classList.toggle("active");
+});
