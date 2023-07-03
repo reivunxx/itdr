@@ -1,32 +1,129 @@
 .menu-mobile {
-  position: absolute;
-  height: 100vh;
+  position: fixed;
+  min-height: 100vh;
   top: 0;
   width: 100%;
   background: $firstAccentColor;
   transform: translateX(-100%);
   transition: transform .5s ease;
+  
   &__wrap {
     display: flex;
     justify-content: space-between;
+    margin-top: 24px; 
+    grid-area: 1/1/2/2;
+    
+    @media all and (max-width: 700px) {
+      margin-top: 18px;
+    }
+    
+  }
+  &__container-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media all and (max-width: 800px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__list {
+    grid-area: 2/1/3/2;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__wrap {
+      display: flex;
+      justify-content: flex-end;
+      @media all and (max-width: 800px) {
+        justify-content: flex-start;
+      }
+    }
+
   }
   &__logo {
-    width: 120px;
+    width: 244px;
+    @media all and (max-width: 1300px) {
+      width: 120px;
+    }
+    
   }
   &__button {
     border-radius: 120px;
     background: $whiteColor;
     color: $firstAccentColor;
-    width: 270px;
-    height: 64px;
+    width: 428px;
+    height: 84px;
     display: flex;
     justify-content: center;
     align-items: center;
-    @include text(24px, 500, 26px);
-    cursor: pointer;
+    @include text(32px, 500, 34px);
+    
+    @media all and (max-width: 1300px) {
+      @include text(24px, 500, 26px);
+      width: 270px;
+    height: 64px;
+    }
+  }
+  &__button-wrap {
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 24px;
+    @media all and (max-width: 800px) {
+      grid-area: 3/1/4/2;
+      justify-content: center;
+    }
+  }
+  &__block {
+    grid-area: 2/2/3/3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;  
+    @media all and (max-width: 800px) {
+      grid-area: 4/1/5/2;
+      justify-content: flex-start; 
+    }
+  }
+  &__item {
+    margin-bottom: 40px;
+    
+  }
+  &__link {
+    display: flex;
+  }
+  &__text {
+    @include text(96px, 700, 104px);
+    color: $whiteColor;
+    font-family: Gilroy-Bold;
+    &:first-child {
+      margin-right: 10px;
+    }
+    @media all and (max-width: 1300px) {
+      @include text(76px, 700, 80px);
+    }
+    @media all and (max-width: 800px) {
+      @include text(48px, 700, 50px);
+    }
+  }
+  &__block-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 336px;
+    width: 100%;
+    @media all and (max-width: 800px)  {
+      max-width: 192px;
+      margin-top: 64px;
+    }
   }
   &__img {
     cursor: pointer;
+    
+  }
+  &__social__img {
+    @media all and (max-width: 800px)  {
+      width: 48px;
+    }
   }
 }
 
@@ -41,4 +138,12 @@
 
 .burger {
   cursor: pointer;
+}
+
+
+.cross {
+  width: 84px;
+    @media all and (max-width: 1300px) {
+      width: 60px;
+    }
 }
