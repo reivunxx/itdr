@@ -38,7 +38,11 @@
     
   }
   &__item_social__img {
-    width: 40px;
+    width: 96px;
+    @media all and (max-width: 1030px) {
+      width: 40px;
+    }
+    
   }
   &__img{
     margin-bottom: 40px;
@@ -114,4 +118,5 @@ align-self: stretch;
     width: 100%;
     justify-content: space-between;
   }
+  
 }
