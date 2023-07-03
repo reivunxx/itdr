@@ -6,6 +6,9 @@ body, html {
   overflow: hidden;
   white-space: nowrap;
   font-size: 100px;
+  @media all and (max-width: 1000px) {
+    font-size: 65px;
+  }
 }
 .marquee span {
   display: inline-block;
@@ -32,6 +35,12 @@ body, html {
     color: $whiteColor;
     @include text(96px, 700, 100px);
   font-family: 'Gilroy-Bold';
+  @media all and (max-width: 1000px) {
+    @include text(28px, 700, 32px);
+  }
+  }
+  @media all and (max-width: 1000px) {
+    padding: 16px;
   }
 }
 
