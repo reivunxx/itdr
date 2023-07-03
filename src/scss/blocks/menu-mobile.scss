@@ -87,6 +87,9 @@
   }
   &__item {
     margin-bottom: 40px;
+    @media all and (max-width: 1600px) {
+      margin-bottom: 20px;
+    }
     
   }
   &__link {
@@ -99,8 +102,11 @@
     &:first-child {
       margin-right: 10px;
     }
-    @media all and (max-width: 1300px) {
+    @media all and (max-width: 1600px) {
       @include text(76px, 700, 80px);
+    }
+    @media all and (max-width: 1300px) {
+      @include text(56px, 700, 80px);
     }
     @media all and (max-width: 800px) {
       @include text(48px, 700, 50px);
