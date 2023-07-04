@@ -43,7 +43,9 @@
 /**
 * Подключение стилей отдельных блоков и секций
 */
+@import 'components/main';
 @import 'components/header';
+
 @import 'components/popup';
 @import 'components/tabs';
 @import 'components/accordion';
@@ -57,6 +59,11 @@
 @import 'blocks/team';
 @import 'blocks/blog.scss';
 @import 'blocks/about.scss';
+@import 'blocks/projects-window';
+
+
+
+
 
 @import 'components/ticker';
 @import 'components/ticker-main-first';

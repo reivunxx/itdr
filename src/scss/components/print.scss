@@ -1,7 +1,7 @@
 h2, [class*='__subtitle'] {
   @include text(74px, 700, 78px);
-  @media all and (max-width: 1400px) {
-    @include text(72px, 700, 76px);
+  @media all and (max-width: 1600px) {
+    @include text(68px, 700, 76px);
   }
   @media all and (max-width: 900px) {
     @include text(52px, 700, 56px);
@@ -21,7 +21,7 @@ h2, [class*='__subtitle'] {
   @include text(30px, 500, 42px);
   color: $firstAccentColor;
   font-family: Gilroy-Regular;
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     @include text(28px, 500, 40px);;
   }
   @media all and (max-width: 900px) {

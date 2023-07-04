@@ -1,53 +1,9 @@
-
-
-
-.logo {
-  width: 244px;
-  @media all and (max-width: 600px) {
-    max-width: 120px;
-    width: 100%;
-  }
-}
-
 .header {
-  &__title {
-    color: $blackColorSecond;
-    @include text(96px, 700, 119px);
-    font-family: Gilroy-Bold;
-    max-width: 1060px;
+  z-index: 5;
+  margin-top: 24px;
+  position: fixed;
     width: 100%;
-    padding: 120px 0 457px;
-    @media all and (max-width: 1400px) {
-      @include text(76px, 700, 86px);
-      max-width: 860px;
-    }
-    @media all and (max-width: 900px) {
-      @include text(56px, 700, 66px);
-      max-width: 660px;
-      padding-top: 80px;
-    }
-    @media all and (max-width: 700px) {
-      @include text(36px, 700, 46px);
-      max-width: 560px;
-      padding-top: 40px;
-      padding: 60px 0 360px;
-    }
-    @media all and (max-width: 500px) {
-      @include text(28px, 700, 32px);
-      max-width: 267px;
-      padding: 40px 0 243px;
-    }
-  }
-  &__menu {
-    margin-top: 24px;
-    @media all and (max-width: 700px) {
-      margin-top: 18px;
-    }
-  }
-}
-
-.burger {
   @media all and (max-width: 700px) {
-    width: 55px;
+    margin-top: 18px;
   }
 }

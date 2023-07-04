@@ -5,6 +5,7 @@
 
 $animationSpeed: 40s;
 
+
 // Animation
 @keyframes scroll {
   0% { transform: translateX(0); }
@@ -14,6 +15,7 @@ $animationSpeed: 40s;
 
 // Styling
 .slider {
+  z-index: -1;
   background: $firstAccentColor;
   // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
   height: 104px;
@@ -79,10 +81,10 @@ $animationSpeed: 40s;
 }
 
 .slider_first {
-  top: 10px;
+  top: 26px;
     transform: rotate(8deg); 
     @media all and (max-width: 500px) {
       position: relative;
-      top: -122px;
+      top: -55px;
     }
   }

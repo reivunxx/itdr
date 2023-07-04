@@ -59,7 +59,7 @@ new Accordion('.accordion', {
   collapsedClass: 'open',
 });
 
-const button = document.querySelector(".burger");
+let button = document.querySelector(".burger");
 let menu = document.querySelector(".menu-mobile");
 let cross = document.querySelector(".cross");
 
