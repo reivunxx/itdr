@@ -103,10 +103,10 @@
       margin-right: 10px;
     }
     @media all and (max-width: 1660px) {
-      @include text(76px, 700, 80px);
+      @include text(56px, 700, 80px);
     }
     @media all and (max-width: 1300px) {
-      @include text(56px, 700, 80px);
+      @include text(48px, 700, 80px);
     }
     @media all and (max-width: 800px) {
       @include text(48px, 700, 50px);
