@@ -1,0 +1,66 @@
+
+.team-page {
+  &__subtitle {
+    margin-top: 224px;
+  @media all and (max-width: 700px)  {
+    margin-top: 160px;
+  }
+  @media all and (max-width: 500px)  {
+    margin-top: 110px;
+  }
+  
+  }
+  &__text {
+    max-width: 832px;
+    width: 100%;
+    @include text(32px, 500, 36px);
+    margin: 48px 0 120px;
+    @media all and (max-width: 1600px) {
+      @include text(28px, 500, 34px);
+    }
+    @media all and (max-width: 900px) {
+      @include text(24px, 500, 32px);
+      margin: 40px 0 80px;
+    }
+    @media all and (max-width: 700px) {
+      @include text(20px, 500, 28px);
+      margin: 30px 0 50px;
+      
+    }
+    @media all and (max-width: 500px) {
+      @include text(16px, 500, 20px);
+      margin: 16px 0 33px;
+     
+    }
+  }
+  &__wrapper {
+    margin-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 52px;
+  grid-column-gap: 52px;
+  @media all and (max-width: 1660px) {
+    grid-row-gap: 32px;
+  grid-column-gap: 32px;
+  }
+  @media all and (max-width: 1530px) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 100px;
+  }
+  @media all and (max-width: 1110px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 80px;
+  }
+  @media all and (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  }
+  }
+  &__wrap {
+    max-width: 378px;
+    width: 100%;
+  }
+}

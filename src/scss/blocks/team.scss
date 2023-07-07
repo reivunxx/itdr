@@ -18,10 +18,11 @@
       max-width: 250px; 
     }
     @media all and (max-width: 900px) {
-      @include text(36px, 700, 39px);
+      @include text(32px, 700, 36px);
+      margin: 10px 0;
     }
     @media all and (max-width: 700px) {
-      @include text(28px, 700, 30px);
+      @include text(22px, 700, 28px);
     }
     @media all and (max-width: 500px) {
       @include text(16px, 700, 18px);
@@ -43,10 +44,10 @@
       max-width: 250px; 
     }
     @media all and (max-width: 900px) {
-      @include text(36px, 500, 40px);
+      @include text(32px, 500, 38px);
     }
     @media all and (max-width: 700px) {
-      @include text(28px, 500, 30px);
+      @include text(22px, 500, 28px);
     }
     @media all and (max-width: 500px) {
       @include text(16px, 500, 20px);
