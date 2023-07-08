@@ -1,5 +1,5 @@
 h2, [class*='__subtitle'] {
-  @include text(74px, 700, 78px);
+  @include text(96px, 700, 78px);
   @media all and (max-width: 1600px) {
     @include text(68px, 700, 76px);
   }
