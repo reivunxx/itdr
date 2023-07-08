@@ -1,0 +1,164 @@
+
+.services {
+
+  &__subtitle {
+    margin-top: 224px;
+  @media all and (max-width: 700px)  {
+    margin-top: 160px;
+  }
+  @media all and (max-width: 500px)  {
+    margin-top: 110px;
+  }
+  
+  }
+  &__text {
+    max-width: 730px;
+    width: 100%;
+    @include text(32px, 500, 36px);
+    margin: 48px 0 120px;
+    @media all and (max-width: 1600px) {
+      @include text(28px, 500, 34px);
+    }
+    @media all and (max-width: 900px) {
+      @include text(24px, 500, 32px);
+      margin: 40px 0 80px;
+    }
+    @media all and (max-width: 700px) {
+      @include text(20px, 500, 28px);
+      margin: 30px 0 50px;
+      
+    }
+    @media all and (max-width: 500px) {
+      @include text(16px, 500, 20px);
+      margin: 16px 0 33px;
+     
+    }
+  }
+  &__button {
+    @include text(48px, 700, 50px);
+    padding: 0 20px;
+    font-family: Gilroy-Bold;
+    max-width: 835px;
+    width: 100%;
+    height: 120px;
+    @media all and (max-width: 1640px) {
+      max-width: 600px;
+      @include text(36px, 700, 40px);
+      height: 90px;
+    }
+    @media all and (max-width: 1100px) {
+      max-width: 400px;
+      @include text(24px, 700, 30px);
+      height: 60px;
+    }
+    @media all and (max-width: 500px) {
+      max-width: 297px;
+      @include text(16px, 700, 20px);
+      height: 40px;
+    }
+  }
+  &__btn {
+    min-width: 307px;
+    max-width: 307px;
+    height: 194px;
+    @include text(32px, 700, 34px);
+    font-family: Gilroy-Bold;
+    border-radius: 16px;
+    background: $lightBurple;
+    &:first-child,
+    &:hover {
+      background: $firstAccentColor;
+    }
+    @media all and (max-width: 1760px) {
+      min-width: 300px;
+      max-width: 300px;
+      margin-right: 20px;
+      
+    }
+    @media all and (max-width: 1660px) {
+      @include text(28px, 700, 34px);
+      
+    }
+    @media all and (max-width: 960px) {
+      min-width: 250px;
+      max-width: 250px;
+      height: 150px;
+      @include text(24px, 700, 30px);
+      
+    }
+    @media all and (max-width: 700px) {
+      min-width: 160px;
+      max-width: 160px;
+      height: 104px;
+      @include text(16px, 700, 22px);
+      margin-right: 16px;
+      
+    }
+  }
+  &__wrapper-btn{
+    margin: 64px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    @media all and (max-width: 1760px) {
+      overflow-x: scroll;
+      
+    }
+    @media all and (max-width: 1460px) {
+      margin: 44px 0 60px;
+    }
+    @media all and (max-width: 700px) {
+      margin: 32px 0 40px;
+    }
+  }
+  &__subtitle_second {
+    @include text(74px, 700, 76px);
+    font-family: Gilroy-Bold;
+    margin-bottom: 48px;
+    max-width: 1200px;
+    width: 100%;
+    color: $blackColorSecond;
+  }
+  &__text_second {
+    @include text(32px, 500, 36px);
+    max-width: 1253px;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  &__wrap {
+    margin: 48px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1253px;
+    width: 100%;
+  }
+  &__description {
+    @include text(32px, 500, 36px);
+    color: #000;
+    max-width: 418px;
+    width: 100%;
+  }
+  &__block{
+    margin: 48px 0 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__projects__text {
+    @include text(24px, 700, 26px);
+    font-family: Gilroy-Bold;
+    margin: 16px 0 20px;
+  }
+  &__projects__img {
+    max-width: 314px;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__projects {
+    padding: 32px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 11px 0px rgba(33, 7, 70, 0.08);
+    max-width: 378px;
+    width: 100%;
+
+  }
+  
+}

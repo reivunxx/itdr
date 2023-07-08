@@ -15,6 +15,12 @@ box-shadow: 0px 2px 27px 0px rgba(180, 180, 180, 0.25);
 margin-right: 58px;
    min-width: 420px;
    max-width: 420px;
+   @media all and (max-width: 1700px) {
+    min-width: 380px;
+   max-width: 380px;
+   padding: 40px 36px;
+   margin-right: 38px;
+   }
    @media all and (max-width: 700px) {
     max-width: 271px;
     min-width: 271px;
@@ -45,6 +51,9 @@ margin-right: 58px;
   }
   &__img {
     margin-bottom: 140px;
+    @media all and (max-width: 1750px) {
+      margin-bottom: 100px;
+     }
     @media all and (max-width: 700px) {
       margin-bottom: 80px;
     }
