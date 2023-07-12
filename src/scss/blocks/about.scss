@@ -16,8 +16,8 @@ margin-right: 58px;
    min-width: 420px;
    max-width: 420px;
    @media all and (max-width: 1700px) {
-    min-width: 380px;
-   max-width: 380px;
+    min-width: 350px;
+   max-width: 350px;
    padding: 40px 36px;
    margin-right: 38px;
    }
@@ -37,6 +37,9 @@ margin-right: 58px;
     @include text(24px, 700, 26px);
     color: $whiteColor;
     margin-bottom: 32px;
+    @media all and (max-width: 1650px) {
+      @include text(20px, 700, 26px);
+    }
     @media all and (max-width: 700px) {
       @include text(16px, 700, 20px);
     }
@@ -45,6 +48,9 @@ margin-right: 58px;
     @include text(18px, 300, 28px);
     font-family: Gilroy-Light;
     color: $whiteColor;
+    @media all and (max-width: 1650px) {
+      @include text(16px, 300, 20px);
+    }
     @media all and (max-width: 700px) {
       @include text(14px, 300, 20px);
     }
@@ -52,7 +58,7 @@ margin-right: 58px;
   &__img {
     margin-bottom: 140px;
     @media all and (max-width: 1750px) {
-      margin-bottom: 100px;
+      margin-bottom: 80px;
      }
     @media all and (max-width: 700px) {
       margin-bottom: 80px;

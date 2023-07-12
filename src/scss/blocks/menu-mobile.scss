@@ -59,6 +59,11 @@
     justify-content: center;
     align-items: center;
     @include text(32px, 500, 34px);
+    @media all and (max-width: 1660px) {
+      width: 328px;
+    height: 64px;
+    @include text(24px, 500, 26px);
+    }
     
     @media all and (max-width: 1300px) {
       @include text(24px, 500, 26px);

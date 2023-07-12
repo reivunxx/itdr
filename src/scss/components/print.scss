@@ -1,10 +1,10 @@
 h2, [class*='__subtitle'] {
-  @include text(96px, 700, 78px);
-  @media all and (max-width: 1600px) {
-    @include text(68px, 700, 76px);
+  @include text(96px, 700, 98px);
+  @media all and (max-width: 1660px) {
+    @include text(48px, 700, 46px);
   }
   @media all and (max-width: 900px) {
-    @include text(52px, 700, 56px);
+    @include text(40px, 700, 42px);
     max-width: 660px;
   }
   @media all and (max-width: 700px) {
@@ -21,15 +21,19 @@ h2, [class*='__subtitle'] {
   @include text(30px, 500, 42px);
   color: $firstAccentColor;
   font-family: Gilroy-Regular;
-  @media all and (max-width: 1600px) {
-    @include text(28px, 500, 40px);;
+  @media all and (max-width: 1660px) {
+    @include text(24px, 500, 28px);;
+  }
+  @media all and (max-width: 1400px) {
+    @include text(22px, 700, 24px);
+    max-width: 660px;
   }
   @media all and (max-width: 900px) {
-    @include text(24px, 500, 32px);;
+    @include text(20px, 500, 22px);;
     max-width: 660px;
   }
   @media all and (max-width: 700px) {
-    @include text(20px, 500, 26px);;
+    @include text(28px, 500, 24px);;
     max-width: 560px;
   }
   @media all and (max-width: 500px) {

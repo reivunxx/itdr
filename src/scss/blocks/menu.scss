@@ -8,6 +8,12 @@
     width: 428px;
     height: 84px;
     color: $whiteColor;
+    @media all and (max-width: 1660px) {
+      width: 328px;
+    height: 64px;
+    @include text(24px, 500, 26px);
+    }
+    
     
   }
   &__item:last-child {

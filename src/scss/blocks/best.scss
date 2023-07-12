@@ -75,8 +75,11 @@
       }
   }
   &__wrapper {
-    overflow-x: scroll;
+   
     display: flex;
     justify-content: space-between;
+    @media all and (max-width: 1500px) {
+      overflow-x: scroll;
+    }
   }
 }
