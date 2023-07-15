@@ -44,9 +44,8 @@
     
   }
   &__item_social__img {
-    width: 96px;
     @media all and (max-width: 1030px) {
-      width: 40px;
+      width: 70%;
     }
     
   }
@@ -80,11 +79,13 @@
       width: 100%;
     }
   }
+  
   &__item_social {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 340px;
+    align-items: flex-end;
+    max-width: 420px;
     width: 100%;
     &__img {
       cursor: pointer;
