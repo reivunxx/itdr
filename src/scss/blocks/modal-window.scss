@@ -61,6 +61,22 @@
     flex-direction: column;
     
   }
+  &__wrap_bottom {
+    @include text(18px, 500, 28px);
+    color: $grayColor;
+    text-align: center;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media all and (max-width: 800px) {
+      @include text(14px, 500, 18px);
+    }
+  }
+  &__link_bottom {
+    text-decoration: underline;
+    color: $grayColor;
+  }
   &__subtitle {
     max-width: 707px;
   }
@@ -141,6 +157,13 @@
       @include text(24px, 500, 26px);
       padding: 44px 0 32px;
     }
+    @media all and (max-width: 1000px) {
+      @include text(20px, 500, 22px);
+    }
+    @media all and (max-width: 600px) {
+      @include text(16px, 400, 18px);
+      padding: 64px 0 16px;
+    }
   }
   &__btn {
     max-width: 428px;
@@ -150,6 +173,12 @@
     @media all and (max-width: 1660px) {
       max-width: 340px;
       height: 60px;
+      @include text(22px, 500, 24px);
+    }
+    @media all and (max-width: 600px) {
+      @include text(16px, 400, 18px);
+      max-width: 304px;
+      height: 56px;
       @include text(22px, 500, 24px);
     }
   }
@@ -191,6 +220,11 @@
     @media all and (max-width: 1660px) {
       width: 200px;
       height: 40px;
+    }
+    @media all and (max-width: 900px) {
+      width: 158px;
+      height: 40px;
+      font-size: 14px;
     }
 }
 
