@@ -31,10 +31,16 @@ body, html {
   background: $lightBurple;
   padding: 40px 0;
   display: flex;
+  @media all and (max-width: 1660px) {
+    padding: 20px 0;
+  }
   &__text {
     color: $whiteColor;
     @include text(96px, 700, 100px);
   font-family: 'Gilroy-Bold';
+  @media all and (max-width: 1660px) {
+    @include text(56px, 700, 70px);
+  }
   @media all and (max-width: 1000px) {
     @include text(28px, 700, 32px);
   }

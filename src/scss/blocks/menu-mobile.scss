@@ -67,8 +67,8 @@
     
     @media all and (max-width: 1300px) {
       @include text(24px, 500, 26px);
-      width: 270px;
-    height: 64px;
+      width: 250px;
+    height: 54px;
     }
   }
   &__button-wrap {
@@ -110,13 +110,13 @@
       margin-right: 10px;
     }
     @media all and (max-width: 1660px) {
-      @include text(56px, 700, 80px);
+      @include text(50px, 700, 80px);
     }
     @media all and (max-width: 1300px) {
       @include text(48px, 700, 80px);
     }
     @media all and (max-width: 800px) {
-      @include text(48px, 700, 50px);
+      @include text(36px, 700, 40px);
     }
   }
   &__block-wrap {
@@ -135,9 +135,10 @@
     
   }
   &__social__img {
-    @media all and (max-width: 800px)  {
-      width: 48px;
+    @media all and (max-width: 1660px) {
+      width: 70%;
     }
+    
   }
 }
 

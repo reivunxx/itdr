@@ -33,7 +33,7 @@
       @include text(18px, 700, 20px);
     }
     @media all and (max-width: 600px) {
-      @include text(14px, 700, 18px);
+      @include text(16px, 700, 18px);
     }
     
   }
@@ -78,7 +78,7 @@
    
     display: flex;
     justify-content: space-between;
-    @media all and (max-width: 1500px) {
+    @media all and (max-width: 1439px) {
       overflow-x: scroll;
     }
   }

@@ -21,6 +21,7 @@
   }
   &__block {
     display: flex;
+    align-items: center;
   }
   &__input {
     border-bottom: solid 1px $firstAccentColor;
@@ -65,7 +66,7 @@
     @include text(18px, 500, 28px);
     color: $grayColor;
     text-align: center;
-    margin-top: 16px;
+    margin: 16px 0 32px;
     display: flex;
     align-items: center;
     justify-content: center;

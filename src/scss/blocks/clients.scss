@@ -22,9 +22,12 @@
     margin: 32px 0 64px;
   }
   &__img {
+    @media all and (max-width: 1660px) {
+      max-width: 200px;
+    width: 100%;
+    }
     @media all and (max-width: 800px) {
       max-width: 190px;
-    width: 100%;
     }
     @media all and (max-width: 427px) {
       max-width: 160px;

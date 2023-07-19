@@ -22,7 +22,7 @@
     width: 100%;
     padding: 224px 0 457px;
     @media all and (max-width: 1660px) {
-      @include text(66px, 700, 68px);
+      @include text(56px, 700, 68px);
       max-width: 760px;
       padding: 224px 0 257px;
     }
@@ -30,12 +30,12 @@
       padding: 224px 0 357px;
     }
     @media all and (max-width: 900px) {
-      @include text(56px, 700, 66px);
+      @include text(36px, 700, 66px);
       max-width: 660px;
       padding: 160px 0 327px;
     }
     @media all and (max-width: 700px) {
-      @include text(36px, 700, 46px);
+      @include text(30px, 700, 46px);
       max-width: 560px;
       padding-top: 40px;
       padding: 160px 0 310px;

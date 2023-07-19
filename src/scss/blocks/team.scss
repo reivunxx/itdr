@@ -11,14 +11,14 @@
     max-width: 314px;
     width: 100%;
     color: $blackColorSecond;
-    @media all and (max-width: 1400px) {
-      @include text(46px, 700, 48px); 
+    @media all and (max-width: 1660px) {
+      @include text(30px, 700, 32px); 
     }
     @media all and (max-width: 970px) {
       max-width: 250px; 
     }
     @media all and (max-width: 900px) {
-      @include text(32px, 700, 36px);
+      @include text(28px, 700, 30px);
       margin: 10px 0;
     }
     @media all and (max-width: 700px) {
@@ -37,17 +37,17 @@
     font-family: Gilroy-Regular;
     @include text(32px, 500, 34px);
     color: $blackColorSecond;
-    @media all and (max-width: 1400px) {
-      @include text(46px, 500, 48px); 
+    @media all and (max-width: 1660px) {
+      @include text(24px, 500, 28px); 
     }
     @media all and (max-width: 970px) {
       max-width: 250px; 
     }
     @media all and (max-width: 900px) {
-      @include text(32px, 500, 38px);
+      @include text(22px, 500, 26px);
     }
     @media all and (max-width: 700px) {
-      @include text(22px, 500, 28px);
+      @include text(20px, 500, 24px);
     }
     @media all and (max-width: 500px) {
       @include text(16px, 500, 20px);

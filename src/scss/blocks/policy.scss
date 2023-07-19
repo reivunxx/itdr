@@ -18,7 +18,7 @@
       @include text(28px, 500, 34px);
     }
     @media all and (max-width: 700px) {
-      @include text(24px, 500, 28px);
+      @include text(20px, 500, 28px);
       margin-bottom: 16px;
     }
   }

@@ -37,14 +37,19 @@
       margin-bottom: 8px;
       color: $whiteColor;
     }
+    @media all and (max-width: 1660px) {
+      @include text(36px, 700, 56px);
+     
+    }
     @media all and (max-width: 1030px) {
-      @include text(27px, 700, 30px);
+      @include text(24px, 700, 30px);
       margin-bottom: 16px;
     }
     
   }
   &__item_social__img {
-    @media all and (max-width: 1030px) {
+    
+    @media all and (max-width: 1660px) {
       width: 70%;
     }
     
@@ -87,6 +92,10 @@
     align-items: flex-end;
     max-width: 420px;
     width: 100%;
+    @media all and (max-width: 1660px) {
+      max-width: 300px;
+      margin-top: 10px;
+    }
     &__img {
       cursor: pointer;
     }

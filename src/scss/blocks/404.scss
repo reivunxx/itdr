@@ -13,10 +13,10 @@
     font-family: Gilroy-Bold;
     @include text(48px, 700, 52px);
     @media all and (max-width: 1660px) {
-      @include text(38px, 700, 42px);
+      @include text(30px, 700, 34px);
     }
     @media all and (max-width: 900px) {
-      @include text(28px, 700, 30px);
+      @include text(26px, 700, 38px);
       text-align: center;
     }
     @media all and (max-width: 500px) {

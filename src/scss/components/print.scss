@@ -1,14 +1,14 @@
 h2, [class*='__subtitle'] {
   @include text(96px, 700, 98px);
   @media all and (max-width: 1660px) {
-    @include text(48px, 700, 46px);
+    @include text(38px, 700, 40px);
   }
   @media all and (max-width: 900px) {
-    @include text(40px, 700, 42px);
+    @include text(32px, 700, 44px);
     max-width: 660px;
   }
   @media all and (max-width: 700px) {
-    @include text(32px, 700, 38px);
+    @include text(28px, 700, 32px);
     max-width: 560px;
   }
   @media all and (max-width: 500px) {
