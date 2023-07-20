@@ -4,7 +4,7 @@
 .logo {
   width: 244px;
   @media all and (max-width: 1660px) {
-    max-width: 190px;
+    max-width: 170px;
     width: 100%;
   }
   @media all and (max-width: 600px) {
@@ -50,6 +50,9 @@
 }
 
 .burger {
+  @media all and (max-width: 1660px) {
+    width: 60px;
+  }
   @media all and (max-width: 700px) {
     width: 55px;
   }

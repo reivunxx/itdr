@@ -7,6 +7,13 @@
   transform: translateX(-100%);
   transition: transform .5s ease;
   
+  &__logo {
+    @media all and (max-width: 1660px) {
+      max-width: 170px;
+      width: 100%;
+    }
+  }
+  
   &__wrap {
     display: flex;
     justify-content: space-between;
@@ -60,8 +67,8 @@
     align-items: center;
     @include text(32px, 500, 34px);
     @media all and (max-width: 1660px) {
-      width: 328px;
-    height: 64px;
+      width: 300px;
+    height: 60px;
     @include text(24px, 500, 26px);
     }
     
