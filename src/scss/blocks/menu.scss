@@ -13,8 +13,12 @@
     height: 60px;
     @include text(24px, 500, 26px);
     }
-    
-    
+  }
+  &__button:hover {
+    @include text(40px, 500, 42px);
+    @media all and (max-width: 1660px) {
+    @include text(28px, 500, 30px);
+    }
   }
   &__item:last-child {
     display: block;

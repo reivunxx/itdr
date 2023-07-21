@@ -17,20 +17,18 @@
     width: 100%;
     @include text(32px, 500, 36px);
     margin: 48px 0 120px;
-    @media all and (max-width: 1600px) {
-      @include text(24px, 500, 28px);
+    @media all and (max-width: 1650px) {
+      @include text(18px, 500, 22px);
     }
     @media all and (max-width: 900px) {
-      @include text(22px, 500, 26px);
+      @include text(16px, 500, 20px);
       margin: 40px 0 80px;
     }
     @media all and (max-width: 700px) {
-      @include text(20px, 500, 28px);
       margin: 30px 0 50px;
       
     }
     @media all and (max-width: 500px) {
-      @include text(16px, 500, 20px);
       margin: 16px 0 33px;
      
     }
@@ -43,8 +41,8 @@
     width: 100%;
     height: 120px;
     @media all and (max-width: 1640px) {
-      max-width: 600px;
-      @include text(36px, 700, 40px);
+      max-width: 500px;
+      @include text(30px, 700, 34px);
       height: 90px;
     }
     @media all and (max-width: 1100px) {
@@ -104,6 +102,9 @@
       overflow-x: scroll;
       
     }
+    @media all and (max-width: 1660px) {
+      @include text(28px, 500, 36px);
+    }
     @media all and (max-width: 1460px) {
       margin: 44px 0 60px;
     }
@@ -118,19 +119,19 @@
     max-width: 1200px;
     width: 100%;
     color: $blackColorSecond;
-    @media all and (max-width: 1600px) {
-      @include text(64px, 700, 76px);
+    @media all and (max-width: 1660px) {
+      @include text(38px, 700, 40px);
     }
     @media all and (max-width: 900px) {
-      @include text(50px, 700, 56px);
+      @include text(32px, 700, 44px);
       margin-bottom: 36px;
     }
     @media all and (max-width: 700px) {
-      @include text(30px, 700, 38px);
+      @include text(28px, 700, 32px);
       margin-bottom: 24px;
     }
     @media all and (max-width: 500px) {
-      @include text(24px, 700, 28px);
+      @include text(24px, 700, 33px);
       margin-bottom: 16px;
     }
   }
@@ -139,19 +140,17 @@
     max-width: 1253px;
     width: 100%;
     margin-bottom: 48px;
-    @media all and (max-width: 1600px) {
-      @include text(28px, 500, 34px);
+    @media all and (max-width: 1650px) {
+      @include text(18px, 500, 22px);
     }
     @media all and (max-width: 900px) {
-      @include text(24px, 500, 32px);
+      @include text(16px, 500, 20px);
       margin-bottom: 36px;
     }
     @media all and (max-width: 700px) {
-      @include text(20px, 500, 28px);
       margin-bottom: 30px;
     }
     @media all and (max-width: 500px) {
-      @include text(16px, 500, 20px);
       margin-bottom: 24px;
      
     }
@@ -175,10 +174,10 @@
     max-width: 418px;
     width: 100%;
     @media all and (max-width: 1600px) {
-      @include text(30px, 500, 34px);
+      @include text(28px, 500, 34px);
     }
     @media all and (max-width: 900px) {
-      @include text(28px, 500, 30px);
+      @include text(24px, 500, 30px);
     }
     @media all and (max-width: 700px) {
       @include text(22px, 500, 26px);

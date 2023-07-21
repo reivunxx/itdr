@@ -11,8 +11,8 @@
     width: 100%;
     @include text(32px, 500, 36px);
     margin: 48px 0 120px;
-    @media all and (max-width: 1600px) {
-      @include text(24px, 500, 28px);
+    @media all and (max-width: 1660px) {
+      @include text(24px, 500, 28px); 
     }
     @media all and (max-width: 900px) {
       @include text(22px, 500, 26px);
@@ -71,3 +71,4 @@ margin-bottom: 24px;
     }
   }
 }
+

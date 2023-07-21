@@ -84,6 +84,10 @@ height: 100%;
     }
     
   }
+  &__btn:hover {
+    color: $whiteColor;
+    background: $firstAccentColor;
+  }
   &__btn {
     background: transparent;
     color: $firstAccentColor;
