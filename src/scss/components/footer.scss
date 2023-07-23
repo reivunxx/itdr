@@ -136,6 +136,9 @@ align-self: stretch;
     right: 0;
     width: 96px;
     top: 80px;
+    @media all and (max-width: 1660px) {
+      width: 60px;
+    }
     @media all and (max-width: 1030px) {
       width: 64px;
     }

@@ -40,7 +40,7 @@ body, html {
     @include text(96px, 700, 100px);
   font-family: 'Gilroy-Bold';
   @media all and (max-width: 1660px) {
-    @include text(56px, 700, 70px);
+    @include text(46px, 700, 50px);
   }
   @media all and (max-width: 1000px) {
     @include text(28px, 700, 32px);

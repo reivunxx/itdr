@@ -138,6 +138,9 @@
     align-items: center;
     max-width: 420px;
     width: 100%;
+    @media all and (max-width: 1660px) {
+      max-width: 380px;
+    }
     @media all and (max-width: 800px)  {
       max-width: 192px;
       margin-top: 64px;

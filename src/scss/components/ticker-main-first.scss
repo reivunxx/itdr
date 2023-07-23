@@ -25,6 +25,9 @@ $animationSpeed: 40s;
   width: 200%;
   margin-left: -100px;
   position: relative;
+  @media all and (max-width: 1660px) {
+    height: 90px;
+  }
   @media all and (max-width: 930px) {
     height: 74px;
   }
@@ -43,6 +46,9 @@ $animationSpeed: 40s;
   .slide {
     height: 100px;
     width: 250px;
+    @media all and (max-width: 1660px) {
+      height: 90px;
+    }
     @media all and (max-width: 930px) {
       height: 70px;
     }
