@@ -70,3 +70,22 @@ button.addEventListener("click", function () {
 cross.addEventListener("click", function () {
   menu.classList.toggle("active");
 });
+
+
+let marquee = document.querySelector(".ticker");
+let modal = document.querySelector(".ticker-modal")
+let crossModal = document.querySelector(".cross-modal")
+
+
+marquee.addEventListener("click", function () {
+  modal.style.display = "flex";
+});
+
+crossModal.addEventListener("click", function () {
+  modal.style.display = "none";
+}); 
+
+// modal.addEventListener("click", function () {
+//   modal.style.display = "none";
+// });
+

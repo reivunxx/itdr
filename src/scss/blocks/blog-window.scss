@@ -48,7 +48,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+  @media all and (max-width: 1660px) {
+    max-width: 600px;
+  }
   
 }
 &__text {
@@ -78,6 +80,11 @@
 &__image {
   max-width: 471px;
   width: 100%;
+}
+&__btn {
+  @media all and (max-width: 1660px) {
+    font-size: 16px;
+  }
 }
 &__text-color {
   @include text(24px, 500, 30px);

@@ -1,0 +1,78 @@
+
+
+.ticker-modal {
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.305);
+  z-index: 5;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: none;
+  &__window {
+    background: $whiteColor;
+    padding: 48px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 868px;
+    width: 100%;
+    margin: 32px;
+    @media all and (max-width: 800px) {
+      padding: 16px;
+      border-radius: 16px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      -ms-border-radius: 16px;
+      -o-border-radius: 16px;
+}
+  }
+  &__text {
+    margin: 32px 0 100px;
+    @include text(24px, 500, 26px);
+    @media all and (max-width: 1600px) {
+      @include text(18px, 500, 22px);
+    }
+    @media all and (max-width: 800px) {
+      @include text(14px, 500, 16px);
+      margin: 16px 0 60px;
+    }
+  }
+  &__btn {
+    margin-top: 16px;
+    margin-bottom: 18px;
+  }
+  &__subtitle {
+    font-size: 96px;
+    max-width: 600px;
+    width: 100%;
+    @media all and (max-width: 1660px) {
+      @include text(38px, 700, 40px);
+    }
+    @media all and (max-width: 900px) {
+      @include text(32px, 700, 44px);
+      
+    }
+    @media all and (max-width: 700px) {
+      @include text(28px, 700, 32px);
+      max-width: 280px;
+    }
+    @media all and (max-width: 500px) {
+      @include text(24px, 700, 33px);
+     
+    }
+  }
+}
+
+
+
+.cross-modal {
+  cursor: pointer;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  @media all and (max-width: 1300px) {
+    width: 60px;
+  }
+}
