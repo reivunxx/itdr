@@ -23,6 +23,7 @@
     @media all and (max-width: 900px) {
       @include text(16px, 500, 20px);
       margin: 40px 0 80px;
+      max-width: 600px;
     }
     @media all and (max-width: 700px) {
       margin: 30px 0 50px;
@@ -30,6 +31,7 @@
     }
     @media all and (max-width: 500px) {
       margin: 16px 0 33px;
+      max-width: 250px;
      
     }
   }

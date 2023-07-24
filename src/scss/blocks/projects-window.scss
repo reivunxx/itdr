@@ -12,20 +12,22 @@
     @include text(32px, 500, 36px);
     margin: 48px 0 120px;
     @media all and (max-width: 1660px) {
-      @include text(24px, 500, 28px); 
+      @include text(18px, 500, 22px); 
     }
     @media all and (max-width: 900px) {
-      @include text(22px, 500, 26px);
+      @include text(16px, 500, 20px);
       margin: 40px 0 80px;
+      max-width: 500px;
+      width: 100%;
     }
     @media all and (max-width: 700px) {
-      @include text(20px, 500, 28px);
       margin: 30px 0 50px;
       
     }
     @media all and (max-width: 500px) {
-      @include text(16px, 500, 20px);
       margin: 16px 0 33px;
+      max-width: 250px;
+      
      
     }
   }
@@ -68,6 +70,19 @@ margin-bottom: 24px;
     @media all and (max-width: 600px) {
       max-width: 364px;
       justify-content: flex-start;
+    }
+  }
+  &__ticker {
+    position: absolute;
+    top: 800px;
+    right: 200px;
+    @media all and (max-width: 1600px) {
+      top: 600px;
+    right: 200px;
+    }
+    @media all and (max-width: 800px) {
+      top: 1000px;
+    right: 130px;
     }
   }
 }
