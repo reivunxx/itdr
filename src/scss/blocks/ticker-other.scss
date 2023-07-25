@@ -1,0 +1,21 @@
+
+.slider-other { 
+  transform: rotate(38deg);
+  left: -500px;
+  top: 98px;
+  // position: absolute;
+    @media all and (max-width: 1460px) {
+      left: -280px;
+    }
+    @media all and (max-width: 900px) {
+      left: -150px;
+    }
+    @media all and (max-width: 600px) {
+      left: -90px;
+    }
+    @media all and (max-width: 500px) {
+      left: -22px;
+    }
+    background: $lightBurple;
+   
+}
