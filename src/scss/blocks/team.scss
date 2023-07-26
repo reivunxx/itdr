@@ -38,16 +38,16 @@
     @include text(32px, 500, 34px);
     color: $blackColorSecond;
     @media all and (max-width: 1660px) {
-      @include text(24px, 500, 28px); 
+      @include text(22px, 500, 26px); 
     }
     @media all and (max-width: 970px) {
       max-width: 250px; 
     }
     @media all and (max-width: 900px) {
-      @include text(22px, 500, 26px);
+      @include text(20px, 500, 24px);
     }
     @media all and (max-width: 700px) {
-      @include text(20px, 500, 24px);
+      @include text(18px, 500, 22px);
     }
     @media all and (max-width: 500px) {
       @include text(16px, 500, 20px);

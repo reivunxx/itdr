@@ -18,7 +18,7 @@ h2, [class*='__subtitle'] {
 }
 
 [class*='__subtitle_second']  {
-  @include text(30px, 500, 42px);
+  @include text(32px, 700, 42px);
   color: $firstAccentColor;
   font-family: Gilroy-Regular;
   @media all and (max-width: 1660px) {

@@ -9,6 +9,7 @@
 overflow: hidden;
   }
   &__text {
+    margin-top: 24px;
     @include text(14px, 300, 24px);
     font-family: Gilroy-Light;
   color: $grayColor;
@@ -16,6 +17,9 @@ overflow: hidden;
 -webkit-line-clamp: 5; // количество строк
 -webkit-box-orient: vertical;
 overflow: hidden;
+@media all and (max-width: 700px) {
+  margin-top: 16px;
+}
   
   }
   &__wrap {
@@ -66,6 +70,8 @@ background: var(--unnamed, #EDA69C);
   }
   &__text-color {
     margin-right: 18px;
+    font-family: Gilroy-Light;
+    @include text(14px, 500, 16px);
   }
   &__wrapper {
     display: flex;

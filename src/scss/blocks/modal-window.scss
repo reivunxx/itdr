@@ -24,6 +24,7 @@
     align-items: center;
   }
   &__input {
+    font-family: Gilroy-Regular;
     border-bottom: solid 1px $firstAccentColor;
     max-height: 85px;
     height: 100%;
@@ -82,16 +83,16 @@
     max-width: 707px;
   }
   &__text {
-    @include text(24px, 500, 26px);
+    @include text(24px, 700, 26px);
     margin: 32px 0 120px;
     max-width: 700px;
     width: 100%;
     @media all and (max-width: 900px) {
-      @include text(18px, 500, 20px);
+      @include text(18px, 700, 20px);
       margin: 24px 0 24px;
     }
     @media all and (max-width: 600px) {
-      @include text(14px, 500, 16px);
+      @include text(14px, 700, 16px);
       margin: 16px 0 24px;
     }
   }
@@ -190,7 +191,7 @@
   position: relative;
   
   text-align: center;
-  @include text(16px, 400, 20px);
+  @include text(18px, 400, 20px);
   @media all and (max-width: 1660px) {
     @include text(14px, 400, 18px);
   }
