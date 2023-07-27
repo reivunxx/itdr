@@ -13,14 +13,14 @@
   &__text {
     max-width: 832px;
     width: 100%;
-    @include text(32px, 500, 36px);
+    @include text(32px, 700, 36px);
     margin: 48px 0 120px;
     @media all and (max-width: 1660px) {
-      @include text(18px, 500, 22px);
+      @include text(18px, 700, 22px);
       max-width: 732px;
     }
     @media all and (max-width: 900px) {
-      @include text(16px, 500, 20px);
+      @include text(16px, 700, 20px);
       margin: 40px 0 80px;
       max-width: 600px;
     }
@@ -38,6 +38,7 @@
     }
   }
   &__wrapper {
+    margin-top: 223px;
     margin-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +49,7 @@
   @media all and (max-width: 1660px) {
     grid-row-gap: 32px;
   grid-column-gap: 32px;
+  margin-top: 180px;
   }
   @media all and (max-width: 1530px) {
     grid-template-columns: repeat(3, 1fr);
@@ -56,11 +58,13 @@
   @media all and (max-width: 1110px) {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 80px;
+    margin-top: 50px;
   }
   @media all and (max-width: 600px) {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 16px;
   grid-column-gap: 16px;
+  margin-top: 0px;
   }
   }
   &__wrap {

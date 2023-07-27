@@ -9,10 +9,10 @@
   &__text {
     max-width: 832px;
     width: 100%;
-    @include text(32px, 500, 36px);
+    @include text(32px, 700, 36px);
     margin: 48px 0 120px;
     @media all and (max-width: 1660px) {
-      @include text(18px, 500, 22px); 
+      @include text(18px, 700, 22px); 
     }
     @media all and (max-width: 900px) {
       @include text(16px, 500, 20px);
@@ -32,6 +32,7 @@
     }
   }
   &__btn {
+    font-family: Gilroy-Regular;
     border-radius: 120px;
 border: 1px solid var(--unnamed, $firstAccentColor);
 background: var(--unnamed, $whiteColor);

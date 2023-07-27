@@ -47,11 +47,11 @@
   }
   &__description {
     color: $firstAccentColor;
-    @include text(24px, 500, 26px);
+    @include text(24px, 700, 26px);
     margin-bottom: 32px;
     
     @media all and (max-width: 700px) {
-      @include text(20px, 500, 28px);
+      @include text(20px, 700, 28px);
       margin-bottom: 20px;
     }
     @media all and (max-width: 500px) {
@@ -59,12 +59,21 @@
       margin-bottom: 16px;
     }
   }
+  &__wrap-content_bottom {
+    margin-top: 120px;
+    max-width: 1170px;
+    width: 100%;
+    @media all and (max-width: 1300px) {
+      margin-top: 80px;
+    }
+    
+  }
   &__text {
-    @include text(32px, 500, 36px);
+    @include text(32px, 700, 36px);
     margin-bottom: 48px;
     
     @media all and (max-width: 1600px) {
-      @include text(18px, 500, 22px);
+      @include text(18px, 700, 22px);
     }
     @media all and (max-width: 900px) {
       @include text(16px, 500, 20px);
@@ -144,68 +153,69 @@
     }
     
   }
-  &__subtitle_one::before {
+  
+  &__one::before {
     background: url(./../images/project/icon1p.svg) no-repeat;
     content: "";
     position: absolute;
     width: 48px;
     height:48px;
-    top: 0px;
+    top: -8px;
     left: -72px;
     @media all and (max-width: 520px) {
       background: url(./../images/project/icon1m.svg) no-repeat;
       width: 22px;
     height:20px;
-    top: 5px;
+    top: 0px;
     left: -28px;
     }
   }
-  &__subtitle_two::before{
+  &__two::before{
     background: url(./../images/project/icon2p.svg) no-repeat;
     content: "";
     position: absolute;
     width: 48px;
     height:48px;
-    top: 0px;
+    top: -8px;
     left: -72px;
     @media all and (max-width: 520px) {
       background: url(./../images/project/icon1m.svg) no-repeat;
       width: 22px;
     height:20px;
-    top: 5px;
+    top: 0px;
     left: -28px;
     }
     
   }
-  &__subtitle_three::before {
+  &__three::before {
     background: url(./../images/project/icon3p.svg) no-repeat;
     content: "";
     position: absolute;
     width: 48px;
     height:48px;
-    top: 0px;
+    top: -8px;
     left: -72px;
     @media all and (max-width: 520px) {
       background: url(./../images/project/icon1m.svg) no-repeat;
       width: 22px;
     height:20px;
-    top: 5px;
+    top: 0px;
     left: -28px;
     }
   }
-  &__subtitle_four::before {
+  &__four::before {
     background: url(./../images/project/icon4p.svg) no-repeat;
     content: "";
     position: absolute;
     width: 48px;
     height:48px;
-    top: 0px;
+    top: -8px;
     left: -72px;
     @media all and (max-width: 520px) {
       background: url(./../images/project/icon1m.svg) no-repeat;
       width: 22px;
     height:20px;
-    top: 5px;
+    top: 0px;
     left: -28px;
     }
   }
@@ -219,7 +229,7 @@
     position: absolute;
     width: 5px;
     height: 5px;
-    top: 0px;
+    top: -8px;
     left: -28px;
     @media all and (max-width: 520px) {
       left: -19px;
