@@ -12,6 +12,7 @@
     
   }
   &__desc {
+    color: #000;
     margin: 48px 0 24px;
     @include text(32px, 700, 34px);
     font-family: Gilroy-Regular;
@@ -28,6 +29,7 @@
     width: 100%;
   }
   &__text, &__item {
+    color: #000;
     font-family: Gilroy-Regular;
     @include text(24px, 700, 28px);
     @media all and (max-width: 1600px) {
@@ -38,6 +40,7 @@
     }
   }
   &__item {
+    color: #000;
     font-family: Gilroy-Regular;
     margin-bottom: 20px;
     @media all and (max-width: 900px) {
