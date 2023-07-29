@@ -1,0 +1,91 @@
+.name {
+  margin: 217px 0 20px;
+  @media all and (max-width: 1100px) {
+    margin: 180px 0 0px;
+  }
+  @media all and (max-width: 900px) {
+    margin: 110px 0 0px;
+  }
+  &__subtitle {
+    max-width: 1200px;
+    width: 100%;
+    
+  }
+  &__desc {
+    margin: 48px 0 24px;
+    @include text(32px, 700, 34px);
+    font-family: Gilroy-Regular;
+    @media all and (max-width: 1600px) {
+      @include text(26px, 700, 28px);
+    }
+    @media all and (max-width: 900px) {
+      @include text(24px, 700, 26px);
+      margin: 24px 0 24px;
+    }
+  }
+  &__wrapper {
+    max-width: 1253px;
+    width: 100%;
+  }
+  &__text, &__item {
+    font-family: Gilroy-Regular;
+    @include text(24px, 700, 28px);
+    @media all and (max-width: 1600px) {
+      @include text(18px, 700, 22px);
+    }
+    @media all and (max-width: 900px) {
+      @include text(16px, 500, 20px);
+    }
+  }
+  &__item {
+    font-family: Gilroy-Regular;
+    margin-bottom: 20px;
+    @media all and (max-width: 900px) {
+      margin-bottom: 12px;
+    }
+  }
+  &__wrap {
+    display: flex;
+    margin: 32px 0 32px;
+    @media all and (max-width: 700px) {
+      justify-content: space-between;
+    }
+    
+  }
+  &__time {
+    font-family: Gilroy-Bold;
+    color: #6B696F;
+  }
+  &__time:first-child {
+    margin-right: 64px;
+    @media all and (max-width: 1200px) {
+      margin-right: 40px;
+    }
+    @media all and (max-width: 800px) {
+      margin-right: 20px;
+    }
+  }
+  &__btn {
+    @include text(24px, 500, 26px);
+    margin-right: 24px;
+    @media all and (max-width: 700px) {
+      @include text(16px, 400, 20px);
+      font-family: Gilroy-Light;
+    }
+  }
+  &__wrap-btn {
+    margin: 32px 0 32px;
+    @media all and (max-width: 900px) {
+      margin: 16px 0 16px;
+    }
+  }
+  &__subtitle_bottom {
+    margin: 120px 0 48px;
+    @media all and (max-width: 900px) {
+      margin: 80px 0 24px;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+}
