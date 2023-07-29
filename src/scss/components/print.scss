@@ -22,22 +22,22 @@ h2, [class*='__subtitle'] {
   color: $firstAccentColor;
   font-family: Gilroy-Regular;
   @media all and (max-width: 1660px) {
-    @include text(24px, 500, 28px);;
+    @include text(24px, 700, 28px);;
   }
   @media all and (max-width: 1400px) {
     @include text(22px, 700, 24px);
     max-width: 660px;
   }
   @media all and (max-width: 900px) {
-    @include text(20px, 500, 22px);;
+    @include text(20px, 700, 22px);;
     max-width: 660px;
   }
   @media all and (max-width: 700px) {
-    @include text(28px, 500, 24px);;
+    @include text(28px, 700, 24px);;
     max-width: 560px;
   }
   @media all and (max-width: 500px) {
-    @include text(16px, 500, 20px);;
+    @include text(16px, 700, 20px);;
    
   }
 }

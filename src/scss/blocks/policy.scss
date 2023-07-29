@@ -11,25 +11,28 @@
   }
   }
   &__description {
-    @include text(32px, 500, 34px);
+    color: #000;
+    @include text(32px, 700, 34px);
     color: $blackColor;
     margin-bottom: 24px;
     @media all and (max-width: 1560px) {
-      @include text(28px, 500, 34px);
+      @include text(28px, 700, 34px);
     }
     @media all and (max-width: 700px) {
-      @include text(20px, 500, 28px);
+      @include text(20px, 700, 28px);
       margin-bottom: 16px;
     }
   }
   &__text {
-    @include text(24px, 400, 34px);
+    color: #000;
+    font-family: Gilroy-Light;
+    @include text(24px, 700, 34px);
     margin-bottom: 48px;
     @media all and (max-width: 1560px) {
-      @include text(22px, 400, 34px);
+      @include text(22px, 700, 34px);
     }
     @media all and (max-width: 700px)  {
-      @include text(16px, 400, 20px);
+      @include text(16px, 700, 20px);
       margin-bottom: 24px;
     }
   }
