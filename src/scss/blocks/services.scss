@@ -15,10 +15,10 @@
   &__text {
     max-width: 730px;
     width: 100%;
-    @include text(32px, 500, 36px);
+    @include text(32px, 700, 36px);
     margin: 48px 0 120px;
     @media all and (max-width: 1650px) {
-      @include text(18px, 500, 22px);
+      @include text(18px, 700, 22px);
       margin: 48px 0 100px;
     }
     @media all and (max-width: 900px) {
@@ -115,36 +115,14 @@
       margin: 32px 0 40px;
     }
   }
-  &__subtitle_second {
-    @include text(74px, 700, 76px);
-    font-family: Gilroy-Bold;
-    margin-bottom: 48px;
-    max-width: 1200px;
-    width: 100%;
-    color: $blackColorSecond;
-    @media all and (max-width: 1660px) {
-      @include text(38px, 700, 40px);
-    }
-    @media all and (max-width: 900px) {
-      @include text(32px, 700, 44px);
-      margin-bottom: 36px;
-    }
-    @media all and (max-width: 700px) {
-      @include text(28px, 700, 32px);
-      margin-bottom: 24px;
-    }
-    @media all and (max-width: 500px) {
-      @include text(24px, 700, 33px);
-      margin-bottom: 16px;
-    }
-  }
+  
   &__text_second {
-    @include text(32px, 500, 36px);
+    @include text(32px, 700, 36px);
     max-width: 1253px;
     width: 100%;
     margin-bottom: 48px;
     @media all and (max-width: 1650px) {
-      @include text(18px, 500, 22px);
+      @include text(18px, 700, 22px);
     }
     @media all and (max-width: 900px) {
       @include text(16px, 500, 20px);
@@ -172,21 +150,21 @@
     }
   }
   &__description {
-    @include text(32px, 500, 36px);
+    @include text(32px, 700, 36px);
     color: #000;
     max-width: 418px;
     width: 100%;
     @media all and (max-width: 1600px) {
-      @include text(28px, 500, 34px);
+      @include text(28px, 700, 34px);
     }
     @media all and (max-width: 900px) {
-      @include text(24px, 500, 30px);
+      @include text(24px, 700, 30px);
     }
     @media all and (max-width: 700px) {
-      @include text(22px, 500, 26px);
+      @include text(22px, 700, 26px);
     }
     @media all and (max-width: 500px) {
-      @include text(16px, 500, 20px);
+      @include text(16px, 700, 20px);
      
     }
     &:first-child {
@@ -257,5 +235,36 @@
 }
 
   }
-  
+  &__subtitle_other {
+    @include text(74px, 700, 76px);
+    font-family: Gilroy-Bold;
+    margin-bottom: 48px;
+    max-width: 1200px;
+    width: 100%;
+    color: $blackColorSecond;
+    @media all and (max-width: 1660px) {
+      @include text(38px, 700, 40px);
+    }
+    @media all and (max-width: 900px) {
+      @include text(32px, 700, 44px);
+      margin-bottom: 36px;
+    }
+    @media all and (max-width: 700px) {
+      @include text(28px, 700, 32px);
+      margin-bottom: 24px;
+    }
+    @media all and (max-width: 500px) {
+      @include text(24px, 700, 33px);
+      margin-bottom: 16px;
+    }
+  }
+  &__subtitle_third {
+    @include text(48px, 700, 52px);
+    @media all and (max-width: 1660px) {
+      @include text(32px, 700, 40px);
+    }
+    @media all and (max-width: 900px) {
+      @include text(18px, 700, 20px);
+    }
+  }
 }
