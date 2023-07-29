@@ -14,10 +14,10 @@
   &__text_top {
     max-width: 832px;
     width: 100%;
-    @include text(32px, 500, 36px);
+    @include text(32px, 700, 36px);
     margin: 48px 0 120px;
     @media all and (max-width: 1600px) {
-      @include text(18px, 500, 22px); 
+      @include text(18px, 700, 22px); 
       margin: 40px 0 80px;
       max-width: 750px;
     }

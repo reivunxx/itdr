@@ -72,7 +72,7 @@ cross.addEventListener("click", function () {
 });
 
 
-let marquee = document.querySelector(".ticker");
+let marquee = document.querySelector(".blog");
 let modal = document.querySelector(".ticker-modal")
 let crossModal = document.querySelector(".cross-modal")
 

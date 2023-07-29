@@ -10,7 +10,7 @@
     color: $whiteColor;
     font-family: Gilroy-Regular;
     transition: 0.3s;
-    @include text(32px, 500, 26px);
+    @include text(32px, 500, 34px);
     @media all and (max-width: 1660px) {
       width: 300px;
     height: 60px;
