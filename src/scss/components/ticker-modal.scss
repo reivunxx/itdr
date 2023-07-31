@@ -32,17 +32,19 @@
 }
   }
   &__text {
-    margin: 32px 0 100px;
-    @include text(24px, 500, 26px);
+    margin: 32px 0 80px;
+    @include text(24px, 700, 26px);
     @media all and (max-width: 1600px) {
-      @include text(18px, 500, 22px);
+      @include text(18px, 700, 22px);
     }
     @media all and (max-width: 800px) {
-      @include text(14px, 500, 16px);
+      @include text(14px, 700, 16px);
       margin: 16px 0 60px;
     }
   }
+  
   &__btn {
+    font-family: Gilroy-Regular;
     margin-top: 16px;
     margin-bottom: 18px;
     &:hover {
@@ -60,6 +62,7 @@
   }
   &__subtitle {
     font-size: 96px;
+    line-height: 114px;
     max-width: 600px;
     width: 100%;
     @media all and (max-width: 1660px) {
@@ -75,11 +78,14 @@
     }
     
   }
+  &__input > input {
+    font-weight: 700;
+  }
 }
 
-// body {
-//   overflow-x: hidden!important;
-// }
+.ticker-modal__input {
+  font-weight: 700;
+}
 
 
 

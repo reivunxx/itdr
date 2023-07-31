@@ -46,6 +46,7 @@
     }
   }
   &__description {
+    font-family: Gilroy-Regular;
     color: $firstAccentColor;
     @include text(24px, 700, 26px);
     margin-bottom: 32px;
@@ -124,6 +125,12 @@
   }
   &__video  {
     margin-bottom: 24px
+  }
+  &__detailing {
+    margin-top: 120px;
+    @media all and (max-width: 900px) {
+      margin-top: 80px;
+    }
   }
   &__detailing__title {
     @include text(32px, 700, 36px);

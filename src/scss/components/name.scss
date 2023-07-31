@@ -43,15 +43,23 @@
     color: #000;
     font-family: Gilroy-Regular;
     margin-bottom: 20px;
+    @include text(24px, 500, 28px);
+    @media all and (max-width: 1600px) {
+      @include text(18px, 500, 22px);
+    }
     @media all and (max-width: 900px) {
+      @include text(16px, 500, 20px);
       margin-bottom: 12px;
     }
+   
   }
   &__wrap {
     display: flex;
     margin: 32px 0 32px;
+    @include text(32px, 700, 34px);
     @media all and (max-width: 700px) {
       justify-content: space-between;
+      @include text(16px, 700, 18px);
     }
     
   }
@@ -74,6 +82,7 @@
     @media all and (max-width: 700px) {
       @include text(16px, 400, 20px);
       font-family: Gilroy-Light;
+      margin-right: 16px;
     }
   }
   &__wrap-btn {
@@ -91,4 +100,26 @@
   &__img {
     width: 100%;
   }
+  &__btn {
+    font-family: Gilroy-Light;
+  }
+  &__subtitle {
+    @include text(76px, 700, 90px);
+  @media all and (max-width: 1660px) {
+    @include text(38px, 700, 40px);
+  }
+  @media all and (max-width: 900px) {
+    @include text(32px, 700, 44px);
+    max-width: 660px;
+  }
+  @media all and (max-width: 700px) {
+    @include text(28px, 700, 32px);
+    max-width: 560px;
+  }
+  @media all and (max-width: 500px) {
+    @include text(24px, 700, 33px);
+   
+  }
+  }
 }
+

@@ -67,6 +67,7 @@
     font-family: Gilroy-Bold;
     border-radius: 16px;
     background: $lightBurple;
+    margin-right: 20px;
     &:first-child,
     &:hover {
       background: $firstAccentColor;
@@ -98,6 +99,7 @@
     }
   }
   &__wrapper-btn{
+    overflow-x: scroll;
     margin: 64px 0 80px;
     display: flex;
     justify-content: space-between;
