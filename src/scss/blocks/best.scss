@@ -18,6 +18,10 @@
     max-width: 835px;
     width: 100%;
     padding-top: 32px;
+    @media all and (max-width: 500px)  {
+      padding-top: 16px;
+      max-width: 290px;
+    }
   }
   &__block {
     display: flex;
@@ -81,6 +85,9 @@
     @media all and (max-width: 1439px) {
       overflow-x: scroll;
       margin-top: 32px;
+    }
+    @media all and (max-width: 500px) {
+      margin-top: 20px;
     }
   }
 }

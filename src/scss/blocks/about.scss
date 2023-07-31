@@ -32,6 +32,9 @@ margin-right: 58px;
   }
   &__subtitle {
     margin-top: 32px;
+    @media all and (max-width: 500px)  {
+      margin-top: 16px;
+    }
   }
   &__description {
     font-family: Gilroy-Bold;

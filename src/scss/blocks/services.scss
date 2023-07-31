@@ -260,7 +260,7 @@
       margin-bottom: 16px;
     }
   }
-  &__subtitle_third {
+  &__sub_third {
     @include text(48px, 700, 52px);
     @media all and (max-width: 1660px) {
       @include text(32px, 700, 40px);

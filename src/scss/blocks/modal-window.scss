@@ -24,7 +24,8 @@
     align-items: center;
   }
   &__input {
-    font-family: Gilroy-Regular;
+    
+    font-family: Gilroy-Bold;
     border-bottom: solid 1px $firstAccentColor;
     max-height: 85px;
     height: 100%;
@@ -78,6 +79,13 @@
   &__link_bottom {
     text-decoration: underline;
     color: $grayColor;
+  }
+  &__link {
+    font-weight: 500;
+    font-family: Gilroy-Regular;
+  }
+  &__item {
+    font-family: Gilroy-Regular;
   }
   &__subtitle {
     max-width: 707px;
@@ -145,6 +153,9 @@
     @media all and (max-width: 1660px) {
       margin-bottom: 40px;
     }
+    @media all and (max-width: 1000px) {
+      margin-bottom: 20px;
+    }
 
   }
   &__img {
@@ -168,6 +179,7 @@
     }
   }
   &__btn {
+    font-family: Gilroy-Regular;
     max-width: 428px;
     width: 100%;
     margin: 0 auto;

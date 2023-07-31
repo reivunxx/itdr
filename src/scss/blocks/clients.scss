@@ -5,7 +5,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 190px;
-    @media all and (max-width: 436px)  {
+    @media all and (max-width: 500px)  {
       margin-bottom: 80px;
     }
 
@@ -20,6 +20,9 @@
   }
   &__subtitle{
     margin: 32px 0 64px;
+    @media all and (max-width: 500px)  {
+      margin: 16px 0 24px;
+    }
   }
   &__img {
     @media all and (max-width: 1660px) {

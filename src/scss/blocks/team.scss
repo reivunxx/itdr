@@ -3,6 +3,9 @@
      margin: 32px 0 64px;
      max-width: 1170px;
      width: 100%;
+     @media all and (max-width: 500px)  {
+      margin: 16px 0 32px;
+    }
   }
   &__description {
     margin: 16px 0;
