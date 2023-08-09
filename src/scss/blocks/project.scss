@@ -71,11 +71,11 @@
     
   }
   &__text {
-    @include text(32px, 700, 36px);
+    @include text(32px, 500, 36px);
     margin-bottom: 48px;
     
     @media all and (max-width: 1600px) {
-      @include text(18px, 700, 22px);
+      @include text(18px, 500, 22px);
     }
     @media all and (max-width: 900px) {
       @include text(16px, 500, 20px);
@@ -373,6 +373,20 @@
     @media all and (max-width: 500px) {
       width: 100%;
     }
+  }
+  &__tag{
+    font-family: Gilroy-Light;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    padding: 8px 20px;
+    color: white;
+    background: $firstAccentColor;
+
+    border-radius: 120px;
+    border: 1px solid  $firstAccentColor;
   }
 
 }

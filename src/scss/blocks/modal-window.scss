@@ -179,22 +179,7 @@
     }
   }
   &__btn {
-    font-family: Gilroy-Regular;
-    max-width: 428px;
-    width: 100%;
     margin: 0 auto;
-    height: 84px;
-    @media all and (max-width: 1660px) {
-      max-width: 340px;
-      height: 60px;
-      @include text(22px, 500, 24px);
-    }
-    @media all and (max-width: 600px) {
-      @include text(16px, 400, 18px);
-      max-width: 304px;
-      height: 56px;
-      @include text(22px, 500, 24px);
-    }
   }
 }
 

@@ -1669,7 +1669,7 @@ body, html {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1750px);
+    transform: translateX(-100%);
   }
 }
 .slider {

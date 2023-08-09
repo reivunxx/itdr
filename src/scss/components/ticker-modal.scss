@@ -42,24 +42,7 @@
       margin: 16px 0 60px;
     }
   }
-  
-  &__btn {
-    font-family: Gilroy-Regular;
-    margin-top: 16px;
-    margin-bottom: 18px;
-    &:hover {
-      font-size: 34px;
-    }
-    @media all and (max-width: 600px) {
-      @include text(24px, 500, 26px);
-      padding: 8px 20px;
-      margin-top: 10px;
-    margin-bottom: 8px;
-      &:hover {
-        font-size: 26px;
-      }
-    }
-  }
+
   &__subtitle {
     font-size: 96px;
     line-height: 114px;

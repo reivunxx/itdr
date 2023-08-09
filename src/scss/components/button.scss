@@ -1,14 +1,34 @@
 .button {
   padding: 8px 20px;
   border-radius: 120px;
-border: 1px solid var(--unnamed, $firstAccentColor);
+  border: 1px solid var(--unnamed, $firstAccentColor);
 
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include text(32px, 500, 38px);
- 
-  
+
+  width: 428px;
+  height: 84px;
 }
 
 .button_lilac {
   color: $whiteColor;
   background: $firstAccentColor;
+
+  &:hover {
+    background: #7008f5;
+  }
+}
+
+.button_white{
+  color: $firstAccentColor;
+  background: transparent;
+  border-color: $firstAccentColor;
+
+  &:hover {
+    background: #7008f5;
+    color: white;
+  }
 }

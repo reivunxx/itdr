@@ -6,11 +6,13 @@
   @media all and (max-width: 900px) {
     margin: 110px 0 0px;
   }
+
   &__subtitle {
     max-width: 1200px;
     width: 100%;
-    
+
   }
+
   &__desc {
     color: #000;
     margin: 48px 0 24px;
@@ -24,21 +26,24 @@
       margin: 24px 0 24px;
     }
   }
+
   &__wrapper {
     max-width: 1253px;
     width: 100%;
   }
+
   &__text, &__item {
     color: #000;
     font-family: Gilroy-Regular;
-    @include text(24px, 700, 28px);
+    @include text(24px, 500, 28px);
     @media all and (max-width: 1600px) {
-      @include text(18px, 700, 22px);
+      @include text(18px, 500, 22px);
     }
     @media all and (max-width: 900px) {
       @include text(16px, 500, 20px);
     }
   }
+
   &__item {
     color: #000;
     font-family: Gilroy-Regular;
@@ -51,8 +56,9 @@
       @include text(16px, 500, 20px);
       margin-bottom: 12px;
     }
-   
+
   }
+
   &__wrap {
     display: flex;
     margin: 32px 0 32px;
@@ -61,12 +67,14 @@
       justify-content: space-between;
       @include text(16px, 700, 18px);
     }
-    
+
   }
+
   &__time {
     font-family: Gilroy-Bold;
     color: #6B696F;
   }
+
   &__time:first-child {
     margin-right: 64px;
     @media all and (max-width: 1200px) {
@@ -76,6 +84,7 @@
       margin-right: 20px;
     }
   }
+
   &__btn {
     @include text(24px, 500, 26px);
     margin-right: 24px;
@@ -85,41 +94,48 @@
       margin-right: 16px;
     }
   }
+
   &__wrap-btn {
     margin: 32px 0 32px;
+    display: flex;
+    gap: 24px;
     @media all and (max-width: 900px) {
       margin: 16px 0 16px;
     }
   }
+
   &__subtitle_bottom {
     margin: 120px 0 48px;
     @media all and (max-width: 900px) {
       margin: 80px 0 24px;
     }
   }
+
   &__img {
     width: 100%;
   }
+
   &__btn {
     font-family: Gilroy-Light;
   }
+
   &__subtitle {
     @include text(76px, 700, 90px);
-  @media all and (max-width: 1660px) {
-    @include text(38px, 700, 40px);
-  }
-  @media all and (max-width: 900px) {
-    @include text(32px, 700, 44px);
-    max-width: 660px;
-  }
-  @media all and (max-width: 700px) {
-    @include text(28px, 700, 32px);
-    max-width: 560px;
-  }
-  @media all and (max-width: 500px) {
-    @include text(24px, 700, 33px);
-   
-  }
+    @media all and (max-width: 1660px) {
+      @include text(38px, 700, 40px);
+    }
+    @media all and (max-width: 900px) {
+      @include text(32px, 700, 44px);
+      max-width: 660px;
+    }
+    @media all and (max-width: 700px) {
+      @include text(28px, 700, 32px);
+      max-width: 560px;
+    }
+    @media all and (max-width: 500px) {
+      @include text(24px, 700, 33px);
+
+    }
   }
 }
 

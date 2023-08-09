@@ -1,12 +1,9 @@
 
-
-
-[class*='__subtitle']  {
+[class*='__subtitle'] {
   @include text(74px, 700, 78px);
   font-family: 'Gilroy-Bold';
   color: $grayColor;
 }
-
 
 
 .best {
@@ -14,21 +11,27 @@
   @media all and (max-width: 600px) {
     margin-bottom: 80px;
   }
-  &__subtitle{
+
+
+  &__subtitle {
     max-width: 835px;
     width: 100%;
     padding-top: 32px;
-    @media all and (max-width: 500px)  {
+    @media all and (max-width: 500px) {
       padding-top: 16px;
       max-width: 290px;
     }
   }
+
   &__block {
     display: flex;
     max-width: 314px;
     width: 100%;
     align-items: center;
+
+
   }
+
   &__description {
     @include text(24px, 700, 26px);
     color: $blackColorSecond;
@@ -39,18 +42,22 @@
     @media all and (max-width: 600px) {
       @include text(16px, 700, 18px);
     }
-    
+
   }
+
   &__img {
     width: 64px;
     padding-right: 10px;
+    transition: .3s;
   }
+
   &__text {
     @include text(18px, 300, 28px);
     font-family: Gilroy-Light;
     margin-top: 18px;
     max-width: 314px;
     width: 100%;
+    transition: .3s;
     @media all and (max-width: 900px) {
       @include text(16px, 300, 26px);
       width: 280px;
@@ -60,30 +67,42 @@
       width: 250px;
     }
   }
+
   &__wrap {
-    
+
     // max-width: 378px;
-      // width: 100%;
-      padding: 29px 32px;
-      border-radius: 15px;
-      background: #FFF;
-      box-shadow: 0px 6px 11px 0px rgba(33, 7, 70, 0.08);
-      @media all and (max-width: 1720px) {
-        margin: 12px
+    // width: 100%;
+    padding: 29px 32px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 6px 11px 0px rgba(33, 7, 70, 0.08);
+    @media all and (max-width: 1720px) {
+      margin: 12px
+    }
+    @media all and (max-width: 900px) {
+      padding: 12px;
+    }
+    @media all and (max-width: 500px) {
+      padding: 8px;
+    }
+
+    &:hover {
+      .best__img {
+        transform: scale(1.05);
       }
-      @media all and (max-width: 900px) {
-        padding: 12px;
+
+      .best__text {
+        transform: translateY(-4px);
       }
-      @media all and (max-width: 500px) {
-        padding: 8px;
-      }
+    }
   }
+
   &__wrapper {
     margin-top: 64px;
     display: flex;
     justify-content: space-between;
     @media all and (max-width: 1439px) {
-      overflow-x: scroll;
+      overflow-x: auto;
       margin-top: 32px;
     }
     @media all and (max-width: 500px) {

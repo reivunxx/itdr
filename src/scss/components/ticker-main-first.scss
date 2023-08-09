@@ -1,6 +1,5 @@
-
 @mixin white-gradient {
-  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 $animationSpeed: 40s;
@@ -8,8 +7,12 @@ $animationSpeed: 40s;
 
 // Animation
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * 7))}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%)
+  }
 }
 
 
@@ -22,8 +25,11 @@ $animationSpeed: 40s;
   // margin: auto;
   // overflow:hidden;
   position: relative;
-  width: 200%;
-  margin-left: -100px;
+  display: flex;
+  padding: 0 10vw;
+  width: 120vw;
+  margin-left: -5vw;
+
   position: relative;
   @media all and (max-width: 1660px) {
     height: 90px;
@@ -34,18 +40,15 @@ $animationSpeed: 40s;
   @media all and (max-width: 530px) {
     height: 50px;
   }
-  
-  
- 
+
+
   .slide-track {
     animation: scroll $animationSpeed linear infinite;
     display: flex;
-    width: calc(250px * 14);
   }
-  
+
   .slide {
     height: 100px;
-    width: 250px;
     @media all and (max-width: 1660px) {
       height: 90px;
     }
@@ -54,28 +57,29 @@ $animationSpeed: 40s;
     }
     @media all and (max-width: 530px) {
       height: 54px;
-      width: 160px;
-      top: 350px
     }
-
   }
 }
 
 
 .slide__wrap {
-  width: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 80px;
-  @media all and (max-width: 500px) {
-    margin-right: 80px;
+
+  img {
+    display: none;
+
+
   }
 }
 
 .slide__wrap > p {
   color: $whiteColor;
-    @include text(32px, 700, 36px);
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  @include text(32px, 700, 36px);
   font-family: 'Gilroy-Bold';
   margin-right: 80px;
   @media all and (max-width: 500px) {
@@ -83,19 +87,37 @@ $animationSpeed: 40s;
   }
   @media all and (max-width: 500px) {
     @include text(16px, 700, 20px);
+    margin-right: 48px;
+    gap: 48px;
+  }
+
+  &:after {
+    content: "";
+    display: flex;
+    width: 16px;
+    height: 17px;
+    border-radius: 100%;
+    background: white;
+
+    @media all and (max-width: 500px) {
+      width: 8px;
+      height: 8px;
+    }
   }
 }
 
 .slider_first {
-  top: 30px;
-    transform: rotate(8deg); 
-    @media all and (max-width: 1400px) {
-      top: 26px;
-    }
-    @media all and (max-width: 500px) {
-      position: relative;
-      top: -55px;
-    }
+  //top: -120px;
+  //transform: rotate(8deg);
+  top: -400px;
+  transform: rotate(-10deg);
+  @media all and (max-width: 1400px) {
+    top: 26px;
   }
+  @media all and (max-width: 500px) {
+    position: relative;
+    top: -55px;
+  }
+}
 
  

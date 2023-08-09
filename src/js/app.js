@@ -54,22 +54,19 @@ new BurgerMenu().init();
 // new Tabs('tabs-example', {});
 
 new Accordion('.accordion', {
-  shouldOpenAll: false, // true
-  defaultOpen: [], // [0,1]
-  collapsedClass: 'open',
+    shouldOpenAll: false, // true
+    defaultOpen: [], // [0,1]
+    collapsedClass: 'open',
 });
 
 let button = document.querySelector(".burger");
-let menu = document.querySelector(".menu-mobile");
+const header = document.querySelector('.header')
 let cross = document.querySelector(".cross");
 
 button.addEventListener("click", function () {
-  menu.classList.toggle("active");
+    header.classList.toggle("active");
 });
 
-cross.addEventListener("click", function () {
-  menu.classList.toggle("active");
-});
 
 
 let marquee = document.querySelector(".blog");
@@ -77,15 +74,61 @@ let modal = document.querySelector(".ticker-modal")
 let crossModal = document.querySelector(".cross-modal")
 
 
-marquee.addEventListener("click", function () {
-  modal.style.display = "flex";
-});
+if (marquee) {
+    marquee.addEventListener("click", function () {
+        modal.style.display = "flex";
+    });
+}
 
-crossModal.addEventListener("click", function () {
-  modal.style.display = "none";
-}); 
+if (modal && crossModal) {
+    crossModal.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+}
 
 // modal.addEventListener("click", function () {
 //   modal.style.display = "none";
 // });
 
+
+//Анимация хедера на скролл (фон)
+document.addEventListener('scroll', (e) => {
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled')
+    } else {
+        header.classList.remove('scrolled')
+    }
+})
+
+
+try {
+    //Анимация секции about
+    const panelsContainer = document.querySelector('.about__wrapper')
+    const scrollbar = document.querySelector('.about__scrollWrap')
+    gsap.to('.about__scrollWrap', {
+        x: -(scrollbar.offsetWidth - panelsContainer.offsetWidth),
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".about",
+            pin: true,
+            start: "top " + String(header.offsetHeight + 16),
+            markers: true,
+            scrub: true,
+        }
+    });
+} catch (e) {
+
+}
+
+const fadeInAnimation = gsap.utils.toArray('.fadeInAnimation').forEach((element) => {
+    gsap.from(element, {
+        y: 20,
+        opacity: 0,
+        ease: "ease",
+        scrollTrigger: {
+            start: "top center",
+            markers: true,
+            trigger: element
+        }
+    });
+})

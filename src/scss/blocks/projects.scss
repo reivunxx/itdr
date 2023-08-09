@@ -1,10 +1,11 @@
 .projects {
   &__subtitle {
     margin-top: 32px;
-    @media all and (max-width: 500px)  {
+    @media all and (max-width: 500px) {
       margin-top: 16px;
     }
   }
+
   &__wrapper {
     padding-top: 64px;
     display: grid;
@@ -14,31 +15,43 @@
     @media all and (max-width: 1660px) {
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
-      
+
     }
     @media all and (max-width: 1440px) {
       grid-template-columns: repeat(2, 1fr);
-      
+
     }
     @media all and (max-width: 850px) {
       grid-template-columns: repeat(1, 1fr);
-      
+
     }
     @media all and (max-width: 500px) {
       padding-top: 32px;
     }
   }
+
   &__wrap {
     padding: 15px;
     border-radius: 16px;
-box-shadow: 0px 2px 27px 0px rgba(180, 180, 180, 0.25);
-max-width: 820px;
-width: 100%;
-height: 100%;
-@media all and (max-width: 1660px) {
-  max-width: 620px;
-}
+    box-shadow: 0px 2px 12px 0px rgba(180, 180, 180, 0.25);
+    max-width: 820px;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    @media all and (max-width: 1660px) {
+      max-width: 620px;
+    }
+
+    &:hover {
+      box-shadow: 0px 2px 12px 0px rgba(180, 180, 180, 0.35);
+      transform: translateY(-8px) !important;
+
+      .projects__image {
+        object-view-box: inset(5%)
+      }
+    }
   }
+
   &__block {
     display: flex;
     align-items: center;
@@ -47,14 +60,21 @@ height: 100%;
       margin-top: 16px;
     }
   }
-  &__img{
+
+  &__img {
     margin-right: 16px;
+    transition: .3s;
   }
-  &__image{
-    max-width: 787px;
+
+  &__image {
+    aspect-ratio: 1.6;
+    border-radius: 4px;
     width: 100%;
     object-fit: cover;
+    transition: .3s;
+    object-view-box: inset(0)
   }
+
   &__description {
     @include text(32px, 700, 34px);
     font-family: Gilroy-Bold;
@@ -71,9 +91,10 @@ height: 100%;
     }
     @media all and (max-width: 500px) {
       @include text(16px, 700, 20px);;
-     
+
     }
   }
+
   &__text {
     @include text(18px, 300, 28px);
     font-family: Gilroy-Light;
@@ -86,41 +107,13 @@ height: 100%;
     @media all and (max-width: 600px) {
       @include text(14px, 300, 18px);
     }
-    
+
   }
-  &__btn:hover {
-    color: $whiteColor;
-    background: $firstAccentColor;
-    @include text(40px,700,40px);
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    @media all and (max-width: 1600px) {
-      @include text(24px, 700, 24px);
-    }
-    @media all and (max-width: 700px) {
-      @include text(20px, 700, 20px);
-    }
-}
+
+
+
   &__btn {
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    background: transparent;
-    color: $firstAccentColor;
-    @include text(32px, 700, 34px);
-    font-family: Gilroy-Regular;
-    max-width: 402px;
-    width: 100%;
     margin: 0 auto;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 80px;
     margin-bottom: 120px;
     @media all and (max-width: 1600px) {
@@ -133,7 +126,7 @@ height: 100%;
       height: 46px;
       @include text(16px, 500, 20px);
       margin-top: 40px;
-    margin-bottom: 80px;
+      margin-bottom: 80px;
     }
   }
 }

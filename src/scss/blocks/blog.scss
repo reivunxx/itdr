@@ -1,49 +1,65 @@
 .blog {
   &__subtitle {
     margin: 32px 0 64px;
-    @media all and (max-width: 500px)  {
+    @media all and (max-width: 500px) {
       margin: 16px 0 24px;
     }
   }
+
   &__description {
     @include text(24px, 700, 32px);
-  font-family: 'Gilroy-Bold';
-  color: $grayColor;
-  display: -webkit-box;
--webkit-line-clamp: 2; // количество строк
--webkit-box-orient: vertical;
-overflow: hidden;
+    font-family: 'Gilroy-Bold';
+    color: $grayColor;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
+
   &__text {
     margin-top: 24px;
     @include text(14px, 300, 24px);
     font-family: Gilroy-Light;
-  color: $grayColor;
-  display: -webkit-box;
--webkit-line-clamp: 5; // количество строк
--webkit-box-orient: vertical;
-overflow: hidden;
-@media all and (max-width: 700px) {
-  margin-top: 16px;
-}
-  
+    color: $grayColor;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    @media all and (max-width: 700px) {
+      margin-top: 16px;
+    }
+
   }
+
   &__wrap {
     max-width: 378px;
     padding: 32px 32px 29px;
     width: 100%;
     border-radius: 15px;
-background: #FFF;
-box-shadow: 0px 6px 11px 0px rgba(33, 7, 70, 0.08);
-      &:last-child {
-        @media all and (max-width: 700px)  {
-           display: none;
-        }
+    background: #FFF;
+    transition: .3s;
+    box-shadow: 0px 2px 12px 0px rgba(180, 180, 180, 0.25);
+
+    &:hover{
+      box-shadow: 0px 2px 12px 0px rgba(180, 180, 180, 0.35);
+      transform: translateY(-8px) !important;
+
+      .blog__image{
+        object-view-box: inset(5%);
       }
-      @media all and (max-width: 1300px) {
-        padding: 16px;
+    }
+
+    &:last-child {
+      @media all and (max-width: 700px) {
+        display: none;
       }
+    }
+
+    @media all and (max-width: 1300px) {
+      padding: 16px;
+    }
   }
+
   &__wrap-data {
     @include text(14px, 700, 18px);
     font-family: Gilroy-Bold;
@@ -51,10 +67,12 @@ box-shadow: 0px 6px 11px 0px rgba(33, 7, 70, 0.08);
     justify-content: space-between;
     margin: 16px 0 0;
   }
+
   &__block-icon {
     display: flex;
     margin: 16px 0;
   }
+
   &__text-color_green,
   &__text-color_blue,
   &__text-color_orange,
@@ -62,23 +80,29 @@ box-shadow: 0px 6px 11px 0px rgba(33, 7, 70, 0.08);
     border-radius: 4px;
     padding: 8px;
   }
+
   &__text-color_green {
     background: var(--unnamed, #9CEDA4);
   }
+
   &__text-color_blue {
     background: var(--unnamed, #9CEDE8);
   }
+
   &__text-color_orange {
-background: var(--unnamed, #EDA69C);
+    background: var(--unnamed, #EDA69C);
   }
+
   &__text-color_pink {
     background: var(--unnamed, #ED91C8);
   }
+
   &__text-color {
     margin-right: 18px;
     font-family: Gilroy-Light;
     @include text(14px, 500, 16px);
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -87,7 +111,7 @@ background: var(--unnamed, #EDA69C);
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 24px;
-        grid-row-gap: 24px;
+      grid-row-gap: 24px;
     }
     @media all and (max-width: 1300px) {
       grid-template-columns: repeat(2, 1fr);
@@ -98,17 +122,18 @@ background: var(--unnamed, #EDA69C);
       grid-column-gap: 16px;
     }
   }
+
   &__image {
-    max-width: 314px;
+    aspect-ratio: 1;
+    transition: .3s;
     width: 100%;
     object-fit: cover;
     object-position: center;
+    object-view-box: inset(0);
     @media all and (max-width: 1300px) {
-      max-width: 364px;
-      height: 246px;
-    
     }
   }
+
   &__more {
     cursor: pointer;
   }
