@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/StarkElessar/gulp-2022/issues"
   },
-  "homepage": "https://github.com/StarkElessar/gulp-2022#readme",
+  "homepage": "https://reivunxx.github.io/itdr/",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/polyfill": "^7.12.1",
@@ -79,6 +79,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "postcss": "^8.4.27",
     "swiper": "^8.4.5"
   }
 }
