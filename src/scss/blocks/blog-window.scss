@@ -9,7 +9,7 @@
   }
   &__time {
     @include text(14px, 400, 20px);
-    font-family: 'Roboto'!important;
+    font-family: 'Gilroy-Light', sans-serif;
   }
   &__text_top {
     max-width: 832px;
@@ -55,7 +55,7 @@
   
 }
 &__text {
-  font-family: 'Roboto';
+  font-family: 'Gilroy-Light' , sans-serif;
   @include text(14px, 400, 20px);
 }
 &__person-wrap {
@@ -83,7 +83,7 @@
   width: 100%;
 }
 &__btn {
-  font-family: Gilroy-Regular;
+  font-family: Gilroy-Regular , sans-serif;
   font-weight: 400;
   @media all and (max-width: 1660px) {
     font-size: 16px;
@@ -121,7 +121,7 @@
 &__description {
   @include text(32px, 700, 36px);
   margin-bottom: 16px;
-  font-family: Gilroy-Bold;
+  font-family: Gilroy-Bold , sans-serif;
   @media all and (max-width: 1660px) {
     @include text(28px, 700, 34px);
   }
@@ -138,7 +138,7 @@
 }
 &__wrap-data {
   @include text(20px, 700, 24px);
-  font-family: Gilroy-Bold;
+  font-family: Gilroy-Bold , sans-serif;
   @media all and (max-width: 1660px) {
     @include text(16px, 700, 20px);
   }

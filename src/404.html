@@ -5,36 +5,23 @@
 })
 
 <body>
-  @@include('html/header.html')
-  <div class="wrapper">
+@@include('html/header.html')
+<main class="wrapper">
     <section class="error">
-      <div class="error__container">
-        <div class="error__wrapper">
-      <img class="error__img" src="images/icons/404.svg" alt="404">
-      <h3 class="error__subtitle">ОШИБКА</h3>
-      <p class="error__text">Мы не нашли такой страницы :( </p>
-      <a href="index.html">
-        <button class="error__btn button">Вернуться на главную</button>
-      </a> 
-    </div>
-    </div>
+        <div class="error__container">
+            <div class="error__wrapper">
+                <img class="error__img" src="images/icons/404.svg" alt="404">
+                <h3 class="error__subtitle">ОШИБКА</h3>
+                <p class="error__text">Мы не нашли такой страницы :( </p>
+                <a href="index.html">
+                    <button class="error__btn button">Вернуться на главную</button>
+                </a>
+            </div>
+        </div>
     </section>
-    
+</main>
 
-   
-
-
-    
-
-
-
-
-
-    @@include('html/footer.html')
-  </div>
-
-  @@include('html/popupExample.html')
-  @@include('html/script.html')
+@@include('html/footer.html')
+@@include('html/script.html')
 </body>
-
 </html>

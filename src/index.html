@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/head.html', {
-    'title': 'ITDR.PRO'
-  })
-  <body>
-    @@include('html/header.html')
-    @@include('html/blocks/ticker-modal.html')
-    <div class="wrapper">
-      @@include('html/main.html')
-      @@include('html/blocks/best.html')
-      @@include('html/blocks/about.html')
-      @@include('html/blocks/projects.html')
-      @@include('html/blocks/clients.html')
-      @@include('html/blocks/team.html')
-      @@include('html/blocks/blog.html')
-      @@include('html/footer.html')
-    </div>
-
-    @@include('html/popupExample.html')
-    @@include('html/script.html')
-  </body>
+@@include('html/head.html', {
+'title': 'ITDR.PRO'
+})
+<body>
+@@include('html/header.html')
+@@include('html/blocks/ticker-modal.html')
+<main class="wrapper">
+    @@include('html/main.html')
+    @@include('html/blocks/best.html')
+    @@include('html/blocks/about.html')
+    @@include('html/blocks/projects.html')
+    @@include('html/blocks/clients.html')
+    @@include('html/blocks/team.html')
+    @@include('html/blocks/blog.html')
+</main>
+@@include('html/footer.html')
+@@include('html/script.html')
+</body>
 </html>

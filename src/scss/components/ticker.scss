@@ -1,21 +1,26 @@
 body, html {
   margin: 0;
 }
+
 .marquee {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
   font-size: 100px;
   cursor: pointer;
+  display: flex;
+  gap: 80px;
   @media all and (max-width: 1000px) {
     font-size: 65px;
   }
 }
+
 .marquee span {
   display: inline-block;
   animation: marquee 12s linear infinite;
   -webkit-animation: marquee 12s linear infinite;
 }
+
 // .marquee:hover span {
 //   animation-play-state: paused;
 // }
@@ -35,17 +40,19 @@ body, html {
   @media all and (max-width: 1660px) {
     padding: 20px 0;
   }
+
   &__text {
     color: $whiteColor;
     @include text(96px, 700, 100px);
-  font-family: 'Gilroy-Bold';
-  @media all and (max-width: 1660px) {
-    @include text(46px, 700, 50px);
+    font-family: 'Gilroy-Bold', sans-serif;
+    @media all and (max-width: 1660px) {
+      @include text(46px, 700, 50px);
+    }
+    @media all and (max-width: 1000px) {
+      @include text(28px, 700, 32px);
+    }
   }
-  @media all and (max-width: 1000px) {
-    @include text(28px, 700, 32px);
-  }
-  }
+
   @media all and (max-width: 1000px) {
     padding: 16px;
   }
