@@ -1,6 +1,4 @@
 
-
-
 .logo {
   width: 244px;
   @media all and (max-width: 1660px) {
@@ -14,39 +12,39 @@
 }
 
 .main {
+  position: relative;
+  width: 100%;
+
+  margin-top: 116px;
+  margin-bottom: 160px;
+
+  @media (max-width: 768px) {
+    margin-top: 32px;
+    margin-bottom: 56px;
+  }
+
   &__title {
     color: $blackColorSecond;
-    @include text(96px, 700, 119px);
-    font-family: Gilroy-Bold;
-    max-width: 1060px;
-    width: 100%;
-    padding: 224px 0 457px;
-    @media all and (max-width: 1660px) {
-      @include text(56px, 700, 68px);
-      max-width: 760px;
-      padding: 224px 0 257px;
+    @include text(96px, 700, 120%);
+    font-family: Gilroy-Bold, sans-serif;
+    margin-top: 0;
+    width: 55vw;
+    padding: 32px 0;
+
+    @media (max-width: 1600px) {
+      @include text(72px, 700, 120%);
     }
-    @media all and (max-width: 1400px) {
-      padding: 224px 0 357px;
+
+    @media (max-width: 1024px) {
+      @include text(52px, 700, 120%);
     }
-    @media all and (max-width: 900px) {
-      @include text(36px, 700, 66px);
-      max-width: 660px;
-      padding: 160px 0 327px;
+
+    @media (max-width: 768px) {
+      @include text(28px, 700, 120%);
+      width: 68vw;
     }
-    @media all and (max-width: 700px) {
-      @include text(30px, 700, 46px);
-      max-width: 560px;
-      padding-top: 40px;
-      padding: 160px 0 310px;
-    }
-    @media all and (max-width: 500px) {
-      @include text(28px, 700, 32px);
-      max-width: 267px;
-      padding: 140px 0 140px;
-    }
+
   }
-  
 }
 
 .burger {
@@ -58,6 +56,6 @@
   }
 }
 
-body{
+body {
   background: #FCFAFF;
 }

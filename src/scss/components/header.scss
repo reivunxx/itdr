@@ -3,10 +3,6 @@
   position: fixed;
   width: 100%;
   transition: .3s;
-  @media all and (max-width: 700px) {
-    padding-top: 18px;
-    padding-bottom: 10px;
-  }
 
   &.scrolled {
     background: white;
@@ -16,53 +12,76 @@
   &.active {
     background: $firstAccentColor;
 
-    .menu__icon{
+    .menu__icon {
 
-      &:hover{
+      &:hover {
         .menuIcon__line1 {
           transform: translate(0, 4px) rotate(45deg);
+
+          @media (max-width: 768px) {
+            transform: translate(0, 2px) rotate(45deg);
+          }
         }
 
         .menuIcon__line2 {
           transform: translate(0, -4px) rotate(-45deg);
+
+          @media (max-width: 768px) {
+            transform: translate(0, -2px) rotate(-45deg);
+          }
         }
       }
 
-      .menuIcon__line1, .menuIcon__line2{
+      .menuIcon__line1, .menuIcon__line2 {
         background: white;
       }
 
 
       .menuIcon__line1 {
         transform: translate(0, 4px) rotate(45deg);
+
+        @media (max-width: 768px) {
+          transform: translate(0, 2px) rotate(45deg);
+        }
       }
 
       .menuIcon__line2 {
         transform: translate(0, -4px) rotate(-45deg);
+
+        @media (max-width: 768px) {
+          transform: translate(0, -2px) rotate(-45deg);
+        }
       }
     }
 
 
-
-    .menu__button{
+    .menu__button {
       background: $whiteColor;
       color: $firstAccentColor;
     }
 
-    svg path{
+    svg path {
       fill: white;
     }
 
-    .menu-mobile{
+    .menu-mobile {
       margin-top: 0;
       pointer-events: auto;
+      opacity: 1;
 
     }
   }
 
-  .header__container{
+  .header__container {
     padding-top: 24px;
-    padding-bottom: 16px;
+    padding-bottom: 24px;
+    position: relative;
+    z-index: 5;
+
+    @media (max-width: 768px) {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
   }
 
 
@@ -77,13 +96,23 @@
   justify-content: center;
   cursor: pointer;
 
-  &:hover{
+
+
+  &:hover {
     .menuIcon__line1 {
       transform: translate(-10px, -10px);
+
+      @media (max-width: 768px) {
+        transform: translate(-6px, -6px);
+      }
     }
 
     .menuIcon__line2 {
       transform: translate(10px, 10px);
+
+      @media (max-width: 768px) {
+        transform: translate(6px, 6px);
+      }
     }
   }
 
@@ -94,13 +123,25 @@
     background: $firstAccentColor;
     transition: .3s;
 
+    @media (max-width: 768px) {
+      width: 40px;
+      height: 4px;
+    }
   }
 
   .menuIcon__line1 {
     transform: translate(10px, -10px);
+
+    @media (max-width: 768px) {
+      transform: translate(6px, -6px);
+    }
   }
 
   .menuIcon__line2 {
     transform: translate(-10px, 10px);
+
+    @media (max-width: 768px) {
+      transform: translate(-6px, 6px);
+    }
   }
 }

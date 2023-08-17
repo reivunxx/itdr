@@ -9,7 +9,6 @@ body, html {
   font-size: 100px;
   cursor: pointer;
   display: flex;
-  gap: 80px;
   @media all and (max-width: 1000px) {
     font-size: 65px;
   }
@@ -17,13 +16,10 @@ body, html {
 
 .marquee span {
   display: inline-block;
+  padding-right: 80px;
   animation: marquee 12s linear infinite;
-  -webkit-animation: marquee 12s linear infinite;
 }
 
-// .marquee:hover span {
-//   animation-play-state: paused;
-// }
 @keyframes marquee {
   0% {
     transform: translate(0, 0);

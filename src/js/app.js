@@ -69,7 +69,7 @@ button.addEventListener("click", function () {
 
 
 
-let marquee = document.querySelector(".blog");
+let marquee = document.querySelector(".ticker__subscription");
 let modal = document.querySelector(".ticker-modal")
 let crossModal = document.querySelector(".cross-modal")
 

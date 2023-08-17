@@ -1,17 +1,6 @@
 
 .services {
 
-  &__subtitle {
-    margin-top: 150px;
-  @media all and (max-width: 700px)  {
-    margin-top: 140px;
-  }
-  @media all and (max-width: 500px)  {
-    margin-top: 110px;
-    font-size: 28px;
-  }
-  
-  }
   &__text {
     max-width: 730px;
     width: 100%;
@@ -28,14 +17,15 @@
     }
     @media all and (max-width: 700px) {
       margin: 30px 0 50px;
-      
+
     }
     @media all and (max-width: 500px) {
       margin: 16px 0 33px;
       max-width: 250px;
-     
+
     }
   }
+
   &__button {
     @include text(48px, 700, 50px);
     padding: 0 20px;
@@ -59,6 +49,7 @@
       height: 40px;
     }
   }
+
   &__btn {
     min-width: 307px;
     max-width: 307px;
@@ -68,26 +59,28 @@
     border-radius: 16px;
     background: $lightBurple;
     margin-right: 20px;
+
     &:first-child,
     &:hover {
       background: $firstAccentColor;
     }
+
     @media all and (max-width: 1760px) {
       min-width: 300px;
       max-width: 300px;
       margin-right: 20px;
-      
+
     }
     @media all and (max-width: 1660px) {
       @include text(28px, 700, 34px);
-      
+
     }
     @media all and (max-width: 960px) {
       min-width: 250px;
       max-width: 250px;
       height: 150px;
       @include text(24px, 700, 30px);
-      
+
     }
     @media all and (max-width: 700px) {
       min-width: 160px;
@@ -95,17 +88,18 @@
       height: 104px;
       @include text(16px, 700, 22px);
       margin-right: 16px;
-      
+
     }
   }
-  &__wrapper-btn{
+
+  &__wrapper-btn {
     overflow-x: auto;
     margin: 64px 0 80px;
     display: flex;
     justify-content: space-between;
     @media all and (max-width: 1760px) {
       overflow-x: scroll;
-      
+
     }
     @media all and (max-width: 1660px) {
       @include text(28px, 500, 36px);
@@ -117,7 +111,7 @@
       margin: 32px 0 40px;
     }
   }
-  
+
   &__text_second {
     @include text(32px, 700, 36px);
     max-width: 1253px;
@@ -135,9 +129,10 @@
     }
     @media all and (max-width: 500px) {
       margin-bottom: 24px;
-     
+
     }
   }
+
   &__wrap {
     margin: 48px 0;
     display: flex;
@@ -151,9 +146,10 @@
       margin: 16px 0 32px;
     }
   }
+
   &__description {
-    @include text(32px, 700, 36px);
-    color: #000;
+    @include text(32px, 600, 36px);
+    color: $grayColor;
     max-width: 418px;
     width: 100%;
     @media all and (max-width: 1600px) {
@@ -167,44 +163,48 @@
     }
     @media all and (max-width: 500px) {
       @include text(16px, 700, 20px);
-     
+
     }
+
     &:first-child {
       @media all and (max-width: 1600px) {
         margin-right: 20px;
       }
       @media all and (max-width: 500px) {
         max-width: 100px;
-       
+
       }
-    
+
     }
+
     &:last-child {
       @media all and (max-width: 500px) {
         max-width: 200px;
-       
+
       }
     }
   }
-  &__block{
+
+  &__block {
     margin: 48px 0 120px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 52px;
-  grid-column-gap: 52px;
-  @media all and (max-width: 1460px)  {
-    grid-row-gap: 42px;
-  grid-column-gap: 42px;
-  margin: 38px 0 100px;
+    grid-row-gap: 52px;
+    grid-column-gap: 52px;
+    @media all and (max-width: 1460px) {
+      grid-row-gap: 42px;
+      grid-column-gap: 42px;
+      margin: 38px 0 100px;
+    }
+    @media all and (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+    @media all and (max-width: 600px) {
+      margin: 16px 0 80px;
+    }
   }
-  @media all and (max-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-  @media all and (max-width: 600px) {
-    margin: 16px 0 80px;
-  }
-  }
+
   &__projects__text {
     @include text(24px, 700, 26px);
     font-family: Gilroy-Bold;
@@ -213,15 +213,17 @@
       @include text(15px, 700, 20px);
     }
   }
+
   &__projects__img {
     max-width: 314px;
     width: 100%;
     object-fit: cover;
   }
+
   &__projects {
     padding: 32px;
     border-radius: 15px;
-    box-shadow: 0px 6px 11px 0px rgba(33, 7, 70, 0.08);
+    box-shadow: 0 6px 11px 0 rgba(33, 7, 70, 0.08);
     max-width: 378px;
     width: 100%;
     @media all and (max-width: 1400px) {
@@ -234,9 +236,10 @@
       -moz-border-radius: 8px;
       -ms-border-radius: 8px;
       -o-border-radius: 8px;
-}
+    }
 
   }
+
   &__subtitle_other {
     @include text(74px, 700, 76px);
     font-family: Gilroy-Bold;
@@ -260,8 +263,10 @@
       margin-bottom: 16px;
     }
   }
+
   &__sub_third {
     @include text(48px, 700, 52px);
+    font-family: Gilroy-Bold;
     @media all and (max-width: 1660px) {
       @include text(32px, 700, 40px);
     }

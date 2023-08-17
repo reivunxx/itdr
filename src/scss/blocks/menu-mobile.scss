@@ -4,8 +4,10 @@
   width: 100%;
   margin-top: -100vh;
   transition: .5s ease;
-  z-index: 10;
+  z-index: 4;
+  position: relative;
   pointer-events: none;
+  opacity: 0;
 
   &__logo {
     @media all and (max-width: 1660px) {
@@ -133,7 +135,6 @@
   }
 
 
-
   &__link {
     display: flex;
     transition: .3s;
@@ -214,7 +215,7 @@
 }
 
 .label {
-  font-family: Gilroy-Regular;
+  font-family: Gilroy-Light, sans-serif;
 }
 
 .menu-mobile__line {
@@ -222,25 +223,29 @@
   width: 100vw;
   height: 100vh;
 
+
+
   .slider-second {
     z-index: 10;
-    left: -37vw;
-    margin: 0;
-    top: 0;
     background: white;
     color: black;
+
+    @media (max-width: 768px) {
+      transform: translate(-10vw, -10vw);
+    }
 
     .slide__wrap {
       p {
         color: $firstAccentColor;;
 
 
-        &:after{
+        &:after {
           background: $firstAccentColor;;
         }
       }
     }
-    img{
+
+    img {
       filter: brightness(0);
     }
   }

@@ -31,6 +31,20 @@
   }
 }
 
+h1 {
+  margin-top: 150px;
+  font-size: 96px;
+  line-height: normal;
+  font-family: Gilroy-Bold, sans-serif;
+  @media all and (max-width: 700px) {
+    margin-top: 140px;
+  }
+  @media all and (max-width: 500px) {
+    margin-top: 110px;
+    font-size: 28px;
+  }
+}
+
 // Стили отзывчивых картинок (IBG) ============================================
 [class*='-ibg'] {
   position: relative;
@@ -82,7 +96,7 @@
 
 p, h2, h3 {
   color: $grayColor;
-  font-family: Gilroy-Regular;
+  font-family: Gilroy-Light, sans-serif;
 }
 
 

@@ -71,9 +71,10 @@
     
   }
   &__text {
-    @include text(32px, 500, 36px);
+    @include text(32px, 600, 36px);
     margin-bottom: 48px;
-    
+    font-family: Gilroy-Light, sans-serif;
+
     @media all and (max-width: 1600px) {
       @include text(18px, 500, 22px);
     }
@@ -228,16 +229,16 @@
     }
   }
   &__item {
-    @include text(32px, 500, 36px);
+    @include text(32px, 600, 36px);
     margin: 0 0 36px 36px;
-    font-family: Gilroy-Regular;
+    font-family: Gilroy-Light, sans-serif;
     position: relative;
     &::before {
       content: "•";
     position: absolute;
     width: 5px;
     height: 5px;
-    top: 0px;
+    top: 0;
     left: -28px;
     @media all and (max-width: 520px) {
       left: -19px;
@@ -284,11 +285,12 @@
     }
   }
   &__team__text-name {
-    @include text(24px, 500, 26px);
+    @include text(24px, 600, 26px);
+    font-family: Gilroy-Light, sans-serif;
     margin-bottom: 5px;
     color: $firstAccentColor;
     @media all and (max-width: 900px) {
-      @include text(16px, 500, 20px);
+      @include text(16px, 600, 20px);
     
     }
   }
@@ -387,7 +389,22 @@
 
     border-radius: 120px;
     border: 1px solid  $firstAccentColor;
+
+    margin-right: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      margin-right: 16px;
+    }
   }
 
 }
 
+
+.project__text-wrap{
+  max-width: 70%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}

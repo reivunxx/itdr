@@ -20,26 +20,11 @@ $animationSpeed: 40s;
 .slider {
   z-index: -1;
   background: $firstAccentColor;
-  // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-  height: 104px;
-  // margin: auto;
-  // overflow:hidden;
   position: relative;
   display: flex;
+  align-items: center;
   padding: 0 10vw;
-  width: 120vw;
-  margin-left: -5vw;
-
-  position: relative;
-  @media all and (max-width: 1660px) {
-    height: 90px;
-  }
-  @media all and (max-width: 930px) {
-    height: 70px;
-  }
-  @media all and (max-width: 530px) {
-    height: 50px;
-  }
+  width: 120%;
 
 
   .slide-track {
@@ -107,17 +92,9 @@ $animationSpeed: 40s;
 }
 
 .slider_first {
-  //top: -120px;
-  //transform: rotate(8deg);
-  top: -400px;
-  transform: rotate(-10deg);
-  @media all and (max-width: 1400px) {
-    top: 26px;
-  }
-  @media all and (max-width: 500px) {
-    position: relative;
-    top: -55px;
-  }
+  rotate: -10deg;
+  margin-left: -10vw;
+
 }
 
  

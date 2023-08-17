@@ -7,7 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include text(32px, 500, 38px);
+  @include text(32px, 600, 38px);
+  font-family: Gilroy-Light, sans-serif;
 
   width: 428px;
   height: 84px;
