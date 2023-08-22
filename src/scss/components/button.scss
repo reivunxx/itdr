@@ -12,6 +12,14 @@
 
   width: 428px;
   height: 84px;
+
+  @media (max-width: 700px){
+    max-width: 206px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
 }
 
 .button_lilac {

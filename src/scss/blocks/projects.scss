@@ -10,8 +10,7 @@
     padding-top: 64px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 20px;
-    grid-column-gap: 10px;
+    grid-gap: 32px;
     @media all and (max-width: 1660px) {
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
@@ -109,7 +108,6 @@
     }
 
   }
-
 
 
   &__btn {

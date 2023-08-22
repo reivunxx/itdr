@@ -189,8 +189,7 @@
     margin: 48px 0 120px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 52px;
-    grid-column-gap: 52px;
+    grid-gap: 52px;
     @media all and (max-width: 1460px) {
       grid-row-gap: 42px;
       grid-column-gap: 42px;
@@ -199,6 +198,7 @@
     @media all and (max-width: 1200px) {
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
+      grid-gap: 16px;
     }
     @media all and (max-width: 600px) {
       margin: 16px 0 80px;

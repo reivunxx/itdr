@@ -68,7 +68,6 @@ button.addEventListener("click", function () {
 });
 
 
-
 let marquee = document.querySelector(".ticker__subscription");
 let modal = document.querySelector(".ticker-modal")
 let crossModal = document.querySelector(".cross-modal")
@@ -112,7 +111,7 @@ try {
             trigger: ".about",
             pin: true,
             start: "top " + String(header.offsetHeight + 16),
-            markers: true,
+            // markers: true,
             scrub: true,
         }
     });
@@ -126,9 +125,39 @@ const fadeInAnimation = gsap.utils.toArray('.fadeInAnimation').forEach((element)
         opacity: 0,
         ease: "ease",
         scrollTrigger: {
-            start: "top center",
-            markers: true,
+            start: "top 70%",
+            // markers: true,
             trigger: element
         }
     });
 })
+
+
+//Валидация email
+const subscribeButton = document.querySelector(".ticker-modal__btn")
+const subscribeInput = document.querySelector(".ticker-modal__input")
+const subscribeNotification = document.querySelector(".ticker-modal__notification")
+const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+
+if(subscribeButton){
+    subscribeButton.addEventListener("click", () => {
+        subscribeNotification.style.marginBottom = "20px"
+        if(!subscribeInput.value.match(emailRegex)){
+            subscribeNotification.innerHTML = "Введите корректный email"
+        } else {
+            try {
+                //...APi call
+                subscribeNotification.innerHTML = "Вы успешно подписались на рассылку"
+            } catch (e) {
+                console.log(e)
+            }
+        }
+    })
+}
+
+//Маска телефона
+const phoneInput = document.getElementById('modal-window__phoneInput');
+const maskOptions = {
+    mask: '+{7}(000)000-00-00'
+};
+const mask = IMask(phoneInput, maskOptions);

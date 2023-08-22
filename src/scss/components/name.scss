@@ -98,6 +98,7 @@
   &__wrap-btn {
     margin: 32px 0 32px;
     display: flex;
+    gap: 16px;
     @media all and (max-width: 900px) {
       margin: 16px 0 16px;
     }

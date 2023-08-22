@@ -13,8 +13,6 @@ h2, [class*='__subtitle'] {
   }
   @media all and (max-width: 500px) {
     @include text(24px, 700, 33px);
-    max-width: 320px;
-   
   }
 }
 
