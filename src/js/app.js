@@ -159,7 +159,7 @@ if (subscribeButton) {
 try {
     const phoneInput = document.getElementById('modal-window__phoneInput');
     const maskOptions = {
-        mask: '+{7}(000)000-00-00'
+        mask: '+{7} (000) 000-00-00'
     };
     const mask = IMask(phoneInput, maskOptions);
 
