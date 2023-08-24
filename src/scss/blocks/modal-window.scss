@@ -91,10 +91,18 @@
     }
   }
 
+  &__filename{
+    margin-left: 16px;
+
+    @media all and (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+  }
+
   &__fileWrap{
     display: flex;
     align-items: center;
-    gap: 16px;
 
     @media all and (max-width: 768px) {
       flex-direction: column;
