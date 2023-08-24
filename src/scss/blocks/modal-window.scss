@@ -94,7 +94,11 @@
   &__fileWrap{
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
+
+    @media all and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__link_bottom {
@@ -230,7 +234,6 @@
 .button-wrapper {
   position: relative;
 
-  text-align: center;
   @include text(18px, 400, 20px);
   @media all and (max-width: 1660px) {
     @include text(14px, 400, 18px);

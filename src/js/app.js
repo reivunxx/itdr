@@ -172,12 +172,19 @@ const filename = document.querySelector(".modal-window__filename")
 const fileInput = document.querySelector(".upload-box")
 
 if (fileInput) {
+    const cleanInput= () => {
+        fileInput.value = null
+        filename.innerHTML = ""
+    }
+
     fileInput.addEventListener("change", (e) => {
-        try {
-            filename.innerHTML = e.target.files[0].name
-        } catch (e) {
-            console.log(e)
-            filename.innerHTML = ""
+        if (e.target.files.length > 0) {
+            filename.addEventListener("click", ()=>{
+                cleanInput()
+                filename.removeEventListener("click", cleanInput)
+            })
+            filename.innerHTML = e.target.files[0].name.slice(0,16) + "..." + " ✖"
+            filename.setAttribute('title', e.target.files[0].name)
         }
     })
 }
