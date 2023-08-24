@@ -4,16 +4,46 @@
   width: 100%;
   transition: .3s;
 
+  &.white{
+    .menu__button {
+      background: $whiteColor;
+      color: black;
+      border-color: transparent;
+    }
+
+    svg path {
+      fill: white;
+    }
+
+    .menuIcon__line1, .menuIcon__line2{
+      background: white;
+    }
+  }
+
   &.scrolled {
     background: white;
     box-shadow: 0 2px 27px 0 rgba(180, 180, 180, 0.25);
+
+    .menu__button {
+      background: $firstAccentColor;
+      color: white;
+    }
+
+    svg path {
+      fill: $firstAccentColor;
+    }
+
+    .menuIcon__line1, .menuIcon__line2{
+      background: $firstAccentColor;
+    }
   }
 
-  &.active {
+
+
+  &.active, .white {
     background: $firstAccentColor;
 
     .menu__icon {
-
       &:hover {
         .menuIcon__line1 {
           transform: translate(0, 4px) rotate(45deg);

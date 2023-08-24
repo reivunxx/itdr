@@ -1,6 +1,6 @@
 .modal-window {
   &__wrapper {
-    margin-top: 220px;
+    margin-top: 182px;
     max-width: 770px;
     width: 100%;
   }
@@ -71,7 +71,7 @@
     display: flex;
     flex-direction: column;
 
-    textarea{
+    textarea {
       resize: vertical;
       height: auto;
     }
@@ -91,6 +91,12 @@
     }
   }
 
+  &__fileWrap{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
   &__link_bottom {
     text-decoration: underline;
     color: $grayColor;
@@ -103,8 +109,18 @@
   &__item {
   }
 
-  &__subtitle {
+  &_subtitle {
     max-width: 707px;
+    margin-top: 0;
+    font-size: 96px;
+
+    @media (max-width: 1200px) {
+      font-size: 65px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 
   &__text {

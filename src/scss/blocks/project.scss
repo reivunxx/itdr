@@ -329,11 +329,12 @@
     right: 0;
   }
   &__arrow__img {
-    margin-left: 5px;
     margin-top: 10px;
   }
   &__arrow__text {
+    font-family: Gilroy-Regular, sans-serif;
     color: #ffffff;
+    margin-right: 16px;
     @include text(74px, 700, 76px);
     @media all and (max-width: 1600px) {
       @include text(54px, 700, 56px);

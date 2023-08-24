@@ -139,10 +139,10 @@ const subscribeInput = document.querySelector(".ticker-modal__input")
 const subscribeNotification = document.querySelector(".ticker-modal__notification")
 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 
-if(subscribeButton){
+if (subscribeButton) {
     subscribeButton.addEventListener("click", () => {
         subscribeNotification.style.marginBottom = "20px"
-        if(!subscribeInput.value.match(emailRegex)){
+        if (!subscribeInput.value.match(emailRegex)) {
             subscribeNotification.innerHTML = "Введите корректный email"
         } else {
             try {
@@ -156,8 +156,34 @@ if(subscribeButton){
 }
 
 //Маска телефона
-const phoneInput = document.getElementById('modal-window__phoneInput');
-const maskOptions = {
-    mask: '+{7}(000)000-00-00'
-};
-const mask = IMask(phoneInput, maskOptions);
+try {
+    const phoneInput = document.getElementById('modal-window__phoneInput');
+    const maskOptions = {
+        mask: '+{7}(000)000-00-00'
+    };
+    const mask = IMask(phoneInput, maskOptions);
+
+} catch (e) {
+    console.log(e)
+}
+
+//Отображение файла в форме обратной связи
+const filename = document.querySelector(".modal-window__filename")
+const fileInput = document.querySelector(".upload-box")
+
+if (fileInput) {
+    fileInput.addEventListener("change", (e) => {
+        try {
+            filename.innerHTML = e.target.files[0].name
+        } catch (e) {
+            console.log(e)
+            filename.innerHTML = ""
+        }
+    })
+}
+
+//Белая заливка меню на странице проекта
+const projectContainer = document.querySelector(".project")
+if (projectContainer) {
+    header.classList.add('white')
+}
